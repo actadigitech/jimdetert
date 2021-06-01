@@ -1,0 +1,25 @@
+uuid: 6e2d0b85-c17c-4d70-805e-e09c8447c24e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:617af590-1412-446d-85ed-13dad8fef587'
+  module:
+    - block_content
+  theme:
+    - actadigitech
+id: stayupdated
+theme: actadigitech
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:617af590-1412-446d-85ed-13dad8fef587'
+settings:
+  id: 'block_content:617af590-1412-446d-85ed-13dad8fef587'
+  label: 'STAY UPDATED'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,52 @@
+uuid: 8f466867-03e2-41c6-ad1b-4ae98e46cd64
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_signpost
+    - field.field.component.featured_signpost.field_display_title
+    - field.field.component.featured_signpost.field_link
+    - field.field.component.featured_signpost.field_side_image
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+id: component.featured_signpost.default
+targetEntityType: component
+bundle: featured_signpost
+mode: default
+content:
+  field_display_title:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_link:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_side_image:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

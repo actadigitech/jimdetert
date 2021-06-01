@@ -1,0 +1,101 @@
+uuid: 612650c8-72d7-4e85-8267-1b7b990c3f51
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.banner_content
+    - field.field.component.banner_content.field_background_image
+    - field.field.component.banner_content.field_description
+    - field.field.component.banner_content.field_display_title
+    - field.field.component.banner_content.field_download_link
+    - field.field.component.banner_content.field_quick_links
+    - field.field.component.banner_content.field_quick_links_title
+    - image.style.thumbnail
+  module:
+    - image
+    - link_ex
+    - text
+id: component.banner_content.default
+targetEntityType: component
+bundle: banner_content
+mode: default
+content:
+  field_background_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_description:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_display_title:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_download_link:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        target: target
+        download: download
+        imce: imce
+        id: 0
+        rel: 0
+        name: 0
+        class: 0
+        accesskey: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_quick_links:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        class: class
+        imce: imce
+        id: 0
+        rel: 0
+        name: 0
+        target: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_quick_links_title:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

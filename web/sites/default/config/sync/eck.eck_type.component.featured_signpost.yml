@@ -1,0 +1,9 @@
+uuid: 0db155b1-b3e4-47c4-a8ef-ced220fd6bc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: featured_signpost
+name: 'Featured Signpost'
+description: 'To add the featured signpost.'

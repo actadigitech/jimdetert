@@ -1,0 +1,9 @@
+uuid: 269e05bb-ed41-4356-9db2-777761ab9636
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: configurable_text
+name: 'Configurable Text'
+description: 'To add the configurable text.'

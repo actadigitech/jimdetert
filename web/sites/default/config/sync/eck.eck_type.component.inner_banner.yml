@@ -1,0 +1,9 @@
+uuid: d2892df4-5cb2-4f45-af4b-b8016f36c9aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: inner_banner
+name: 'Inner Banner'
+description: 'To add the banner for the inner pages.'

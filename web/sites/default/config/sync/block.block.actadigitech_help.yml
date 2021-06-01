@@ -1,0 +1,22 @@
+uuid: bade9b5a-b6b6-4817-81d4-7b00d30279a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - actadigitech
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: actadigitech_help
+theme: actadigitech
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

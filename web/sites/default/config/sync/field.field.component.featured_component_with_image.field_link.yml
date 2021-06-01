@@ -1,0 +1,23 @@
+uuid: 4fe6e8dd-0bb6-4fa2-b6ad-d12325d5c161
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_component_with_image
+    - field.storage.component.field_link
+  module:
+    - link
+id: component.featured_component_with_image.field_link
+field_name: field_link
+entity_type: component
+bundle: featured_component_with_image
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

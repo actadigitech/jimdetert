@@ -1,0 +1,25 @@
+uuid: 2fc9ce24-14a1-49ac-af9d-6a092ab82460
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f0a2320f-a062-4be1-93c1-8bf175db29b5'
+  module:
+    - block_content
+  theme:
+    - actadigitech
+id: credit
+theme: actadigitech
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:f0a2320f-a062-4be1-93c1-8bf175db29b5'
+settings:
+  id: 'block_content:f0a2320f-a062-4be1-93c1-8bf175db29b5'
+  label: Credit
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

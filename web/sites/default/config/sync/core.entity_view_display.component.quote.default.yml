@@ -1,0 +1,30 @@
+uuid: 709ae54a-745f-49d4-b7dd-98275aad9509
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.quote
+    - field.field.component.quote.field_quote_body
+  module:
+    - text
+id: component.quote.default
+targetEntityType: component
+bundle: quote
+mode: default
+content:
+  field_quote_body:
+    weight: -4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

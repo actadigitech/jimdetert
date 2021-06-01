@@ -1,0 +1,20 @@
+uuid: a8b872c7-3e95-4fcf-a3e1-0c820349009c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - node
+id: node.field_banner
+field_name: field_banner
+entity_type: node
+type: entity_reference
+settings:
+  target_type: component
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

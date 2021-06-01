@@ -1,0 +1,23 @@
+uuid: a411e6a1-c049-40a6-a95c-277e3ed9ce0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.layout_page.field_banner
+    - node.type.layout_page
+  module:
+    - user
+id: node.layout_page.teaser
+targetEntityType: node
+bundle: layout_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_banner: true
+  social_sharing: true
