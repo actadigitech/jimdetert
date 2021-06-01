@@ -1,0 +1,21 @@
+uuid: 5211f409-bced-4089-8c07-afdea16723da
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.inner_banner
+    - field.storage.component.field_background_colour
+  module:
+    - options
+id: component.inner_banner.field_background_colour
+field_name: field_background_colour
+entity_type: component
+bundle: inner_banner
+label: 'Background Colour'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

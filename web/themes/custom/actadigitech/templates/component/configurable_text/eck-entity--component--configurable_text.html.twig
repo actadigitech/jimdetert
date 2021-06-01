@@ -1,0 +1,17 @@
+{% set body = eck_entity.field_description.getValue().0.value %}
+
+{% set classes = [
+'article-intro white type_1',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="narrow_width_plus_padding">
+    <div class="narrow_width s_inner">
+      {{ body|raw }}
+    </div>
+  </div>
+</section>
+
+  

@@ -1,0 +1,18 @@
+uuid: dc80cc94-0232-4e62-98b7-a42e50bb28b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Layout Page'
+type: layout_page
+description: 'Add page with different components'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,28 @@
+{% set title = eck_entity.field_display_title.getValue().0.value %}
+{% set image_url = eck_entity.field_side_image.entity.uri.value %}
+{% set image_alt = eck_entity.field_side_image.entity.uri.value %}
+
+{% set link_url = eck_entity.field_link.0.url %}
+{% set link_text = eck_entity.field_link.0.title %}
+
+{% set classes = [
+'guide-block guide-block_curriculum',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="content_width_plus_padding">
+    <div class="content_width">
+      <div class="guide-block__content s_text">
+        {{ title|raw }}
+        <a href="{{ link_url }}" target="_blank" class="btn btn_secondary btn_icon">
+          {{ link_text }}
+        </a>
+        <div class="guide-block__image">
+          <img src="{{ file_url(image_url) }}" alt="{{ image_alt }}">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

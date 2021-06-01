@@ -1,0 +1,14 @@
+uuid: d8733d11-2679-49a7-9f7a-9d7191b71e95
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - skshukla96@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

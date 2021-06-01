@@ -1,0 +1,25 @@
+uuid: dffbf95d-5002-429b-8bbe-6968098625a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menu
+  module:
+    - system
+  theme:
+    - actadigitech
+id: footermenu
+theme: actadigitech
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:footer-menu'
+settings:
+  id: 'system_menu_block:footer-menu'
+  label: 'Footer Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

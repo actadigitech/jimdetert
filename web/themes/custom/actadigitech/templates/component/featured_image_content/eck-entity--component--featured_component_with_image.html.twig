@@ -1,0 +1,37 @@
+{% set body = eck_entity.field_description.getValue().0.value %}
+{% set body_title = eck_entity.field_display_title.getValue().0.value %}
+{% set image_url = eck_entity.field_side_image.entity.uri.value %}
+{% set image_alt = eck_entity.field_side_image.entity.uri.value %}
+
+{% set link_url = eck_entity.field_link.0.url %}
+{% set link_text = eck_entity.field_link.0.title %}
+
+{% set classes = [
+'opportunities-section main-courage',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="content_width_plus_padding">
+    <div class="content_width s_inner">
+      <div class="main-courage__block">
+        <div class="col">
+          {{ body|raw }}
+        </div>
+        <div class="col">
+          <div class="start-courage start-courage_home">
+            {{ body_title|raw }}
+            <a href="{{ link_url }}" class="btn btn_primary">{{ link_text }}</a>
+            <div class="start-courage__image-block">
+              <img src="{{ file_url(image_url) }}" alt="{{ image_alt }}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  

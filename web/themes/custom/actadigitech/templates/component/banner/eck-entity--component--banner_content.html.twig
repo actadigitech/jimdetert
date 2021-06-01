@@ -1,0 +1,50 @@
+{% set display_title = eck_entity.field_display_title.getValue().0.value %}
+{% set description = eck_entity.field_description.getValue().0.value|raw %}
+{% set links = eck_entity.field_quick_links %}
+{% set quick_links_display_title = eck_entity.field_quick_links_title.value %}
+{% set image_url = eck_entity.field_background_image.entity.uri.value %}
+{% set image_alt = eck_entity.field_background_image.entity.uri.value %}
+
+{% set download_link_url = eck_entity.field_download_link.0.url %}
+{% set download_link_text = eck_entity.field_download_link.0.title %}
+
+{% set classes = [
+'intro',
+] %}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="intro__top">
+    <img src="{{ file_url(image_url) }}" alt="{{ image_alt }}" />
+    <div class="intro__text-block">
+      {{ display_title|raw }}
+      {{ description|raw }}
+    </div>
+    <div class="intro__button-block">
+      <div class="intro__download-button">
+        <a href="{{ download_link_url }}" target="_blank">
+          <i class="icon-download"></i>
+        </a>
+      </div>
+      <span class="intro__button-text">
+        <a href="{{ download_link_url }}" target="_blank">
+          {{ download_link_text }}
+        </a>
+      </span>
+    </div>
+  </div>
+  <div class="intro__bottom">
+    <div class="intro__order-text">
+      <div class="intro__order-text-heading">pre-order</div>
+      <div class="intro__order-text-date">{{ quick_links_display_title }}</div>
+    </div>
+    <div class="intro__stores-list">
+      {% for key,subentity in links if key|first != '#' %}
+        <a class="btn btn_primary" target="{{ subentity.options['attributes']['target'] }}" href="{{ subentity.url}}">{{ subentity.title }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+  

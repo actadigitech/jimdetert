@@ -1,0 +1,21 @@
+uuid: ca9a5042-41ce-4ae5-a259-1b5426845401
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_component_with_image
+    - field.storage.component.field_display_title
+  module:
+    - text
+id: component.featured_component_with_image.field_display_title
+field_name: field_display_title
+entity_type: component
+bundle: featured_component_with_image
+label: 'Display Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,27 @@
+uuid: fa7161af-159f-4a2c-befe-457c72ab2fcb
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: component.field_background_colour
+field_name: field_background_colour
+entity_type: component
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grey
+      label: Grey
+    -
+      value: beige
+      label: Beige
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

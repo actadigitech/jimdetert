@@ -1,0 +1,21 @@
+uuid: 426a94c3-a364-4cb3-b8dc-10f73e944669
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_signpost
+    - field.storage.component.field_display_title
+  module:
+    - text
+id: component.featured_signpost.field_display_title
+field_name: field_display_title
+entity_type: component
+bundle: featured_signpost
+label: 'Display Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

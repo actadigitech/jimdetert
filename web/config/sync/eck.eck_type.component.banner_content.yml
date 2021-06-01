@@ -1,0 +1,9 @@
+uuid: 0daa8faa-0e6d-496c-8c95-9a7777b181f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: banner_content
+name: 'Banner Content'
+description: 'To add the banner with different variations'

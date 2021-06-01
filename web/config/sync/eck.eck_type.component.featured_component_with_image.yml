@@ -1,0 +1,9 @@
+uuid: 13ac8b87-aea1-47ab-9027-997f679a8978
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: featured_component_with_image
+name: 'Featured Component With Image'
+description: 'To add the featured component with image. '

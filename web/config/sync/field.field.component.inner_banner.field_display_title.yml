@@ -1,0 +1,21 @@
+uuid: 804bbf67-987f-4747-b7e4-12b07d09d064
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.inner_banner
+    - field.storage.component.field_display_title
+  module:
+    - text
+id: component.inner_banner.field_display_title
+field_name: field_display_title
+entity_type: component
+bundle: inner_banner
+label: 'Display Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

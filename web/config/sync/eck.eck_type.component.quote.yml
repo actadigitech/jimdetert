@@ -1,0 +1,9 @@
+uuid: 77c1535d-6e07-413e-bb32-4776ef98c50d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: quote
+name: Quote
+description: 'To add the quote into the site'

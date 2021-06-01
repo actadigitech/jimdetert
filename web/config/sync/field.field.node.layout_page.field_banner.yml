@@ -1,0 +1,31 @@
+uuid: e8d08f37-a5d4-49f4-9c25-2c112905abce
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.banner_content
+    - eck.eck_type.component.inner_banner
+    - field.storage.node.field_banner
+    - node.type.layout_page
+id: node.layout_page.field_banner
+field_name: field_banner
+entity_type: node
+bundle: layout_page
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings:
+    target_bundles:
+      banner_content: banner_content
+      inner_banner: inner_banner
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: banner_content
+field_type: entity_reference
