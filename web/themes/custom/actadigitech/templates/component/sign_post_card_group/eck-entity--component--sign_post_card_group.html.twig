@@ -1,30 +1,36 @@
-{% set sub_title = eck_entity.field_sub_title.value %}
-{% set title = eck_entity.field_title.value %}
+{% set body = eck_entity.field_description.getValue().0.value %}
 
-{% set link_url = eck_entity.field_link.0.url %}
-{% set link_text = eck_entity.field_link.0.title %}
+{% set cards = eck_entity.field_add_card %}
+
+
 
 {% set classes = [
-'start-courage-section',
+'resources-section',
 ] %}
 
 <section{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {{ title_suffix }}
-  <div class="narrow_width_plus_padding">
-    <div class="narrow_width s_inner">
-      <div class="start-courage">
-        <h6 class="start-courage__heading">{{ sub_title }}</h6>
-        <p class="start-courage__text">{{ title }}</p>
-        <a target="_blank" href="{{ link_url }}" class="btn btn_primary">{{ link_text }}</a>
-        <div class="start-courage__image-block">
-          <img src="/themes/custom/actadigitech/images/ladder-woman.png" alt="">
-          <img src="/themes/custom/actadigitech/images/ladder-woman-shadow.png" alt="">
+  <div class="content_width_plus_padding">
+    <div class="content_width s_inner">
+      <div class="container">
+        {{ body|raw }}
+        <div class="intro-card__block">
+        {% for key,subentity in cards if key|first != '#' %}
+          <div class="intro-card">
+            <div class="intro-card__top">
+              <span class="intro-card__heading">{{ subentity.entity.field_title.value }}</span>
+              <div class="intro-card__icon-block">
+                <img src="{{ file_url(subentity.entity.field_icon_image.entity.uri.value) }}" alt="">
+              </div>
+            </div>
+            {{ subentity.entity.field_description.getValue().0.value|raw }}
+            <a href=".{{ subentity.entity.field_link.0.url }}" class="btn btn_secondary">{{ subentity.entity.field_link.0.title }}</a>
+          </div>
+        {% endfor %}
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
   

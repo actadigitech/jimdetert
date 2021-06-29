@@ -1,0 +1,8 @@
+{% set view_machine_name = eck_entity.field_dynamic_view_content.getValue().0.target_id %}
+{% set view_disolay_name = eck_entity.field_display_name.value %}
+
+<div{{ attributes}}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+	{{ drupal_view(view_machine_name, view_disolay_name) }}
+</div>

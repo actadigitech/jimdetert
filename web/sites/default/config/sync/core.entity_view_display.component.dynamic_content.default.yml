@@ -1,0 +1,38 @@
+uuid: 017cace5-6b9c-49c1-996c-9e218e943d90
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.dynamic_content
+    - field.field.component.dynamic_content.field_display_name
+    - field.field.component.dynamic_content.field_dynamic_view_content
+id: component.dynamic_content.default
+targetEntityType: component
+bundle: dynamic_content
+mode: default
+content:
+  field_display_name:
+    weight: -3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dynamic_view_content:
+    weight: -4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 822c4bc5-e3f6-40b6-82ee-4076e87742d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.dynamic_content
+    - field.storage.component.field_display_name
+id: component.dynamic_content.field_display_name
+field_name: field_display_name
+entity_type: component
+bundle: dynamic_content
+label: 'Display Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

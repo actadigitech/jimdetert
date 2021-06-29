@@ -1,0 +1,9 @@
+uuid: 96163cac-8241-48e1-978d-ec4e54873d1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: intro_text_with_cta
+name: 'Intro Text With CTA'
+description: 'To add the intro text with CTA and Image.'

@@ -1,0 +1,21 @@
+uuid: 6cadedf0-2108-417f-93e5-47bb3fb992c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.intro_text_with_cta
+    - field.storage.component.field_description
+  module:
+    - text
+id: component.intro_text_with_cta.field_description
+field_name: field_description
+entity_type: component
+bundle: intro_text_with_cta
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

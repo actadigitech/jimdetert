@@ -7,9 +7,10 @@ dependencies:
     - field.field.component.inner_banner.field_background_colour
     - field.field.component.inner_banner.field_display_title
     - field.field.component.inner_banner.field_side_image
+    - field.field.component.inner_banner.field_white_font
   module:
-    - image
     - options
+    - svg_image
     - text
 id: component.inner_banner.default
 targetEntityType: component
@@ -38,6 +39,16 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_white_font:
+    weight: -1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   title:
     label: hidden

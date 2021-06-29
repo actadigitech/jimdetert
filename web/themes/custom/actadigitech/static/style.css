@@ -1249,3 +1249,7 @@ pending jim
 .intro__image-block {
 	margin-bottom: 47px !important;
 }
+
+.white-font {
+	color: white !important;
+}

@@ -1,0 +1,33 @@
+{% set body = eck_entity.field_description.getValue().0.value %}
+{% set title = eck_entity.field_title.value %}
+{% set image_url = eck_entity.field_side_image.entity.uri.value %}
+{% set image_alt = eck_entity.field_side_image.entity.uri.value %}
+
+{% set link_url = eck_entity.field_link.0.url %}
+{% set link_text = eck_entity.field_link.0.title %}
+
+{% set classes = [
+'guide-block guide-block_assessments',
+] %}
+
+<section{{ attributes.addClass(classes).setAttribute('id', 'def_mom_sit') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="content_width_plus_padding">
+    <div class="content_width">
+      <div class="guide-block__content s_text"><!-- @CMC: the XD spec has this
+      element vertically centered within the the blue zone-->
+        <h3>{{ title }}</h3>
+        <!-- @CMC: XD spec has spacing between these two elements. Ideally the 'a' would be within a 'div' too, but that's not vital :) -->
+        <a href="{{ link_url }}" target="_blank" class="btn btn_secondary btn_icon">
+          {{ link_text }}
+          <img src="/themes/custom/actadigitech/images/open-link.png" alt="">
+        </a>
+        {{ body|raw }}
+        <div class="guide-block__image">
+          <img src="{{ file_url(image_url) }}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

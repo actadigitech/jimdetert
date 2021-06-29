@@ -1,0 +1,23 @@
+uuid: 6341377e-19c4-4cb4-96b1-c0a7a181cb78
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.dynamic_content
+    - field.storage.component.field_dynamic_view_content
+id: component.dynamic_content.field_dynamic_view_content
+field_name: field_dynamic_view_content
+entity_type: component
+bundle: dynamic_content
+label: 'Dynamic View'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

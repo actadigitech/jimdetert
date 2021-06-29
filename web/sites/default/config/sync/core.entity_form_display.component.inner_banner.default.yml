@@ -7,9 +7,10 @@ dependencies:
     - field.field.component.inner_banner.field_background_colour
     - field.field.component.inner_banner.field_display_title
     - field.field.component.inner_banner.field_side_image
+    - field.field.component.inner_banner.field_white_font
     - image.style.thumbnail
   module:
-    - image
+    - svg_image
     - text
 id: component.inner_banner.default
 targetEntityType: component
@@ -37,6 +38,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_white_font:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   title:
     type: string_textfield

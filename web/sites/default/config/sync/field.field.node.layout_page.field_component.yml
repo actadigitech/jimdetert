@@ -5,9 +5,11 @@ dependencies:
   config:
     - eck.eck_type.component.configurable_text
     - eck.eck_type.component.detailed_contact_us
+    - eck.eck_type.component.dynamic_content
     - eck.eck_type.component.featured_center_component
     - eck.eck_type.component.featured_component_with_image
     - eck.eck_type.component.featured_signpost
+    - eck.eck_type.component.intro_text_with_cta
     - eck.eck_type.component.introduction_featured_content
     - eck.eck_type.component.quote
     - eck.eck_type.component.sign_post_card_group
@@ -29,9 +31,11 @@ settings:
     target_bundles:
       configurable_text: configurable_text
       detailed_contact_us: detailed_contact_us
+      dynamic_content: dynamic_content
       featured_center_component: featured_center_component
       featured_component_with_image: featured_component_with_image
       featured_signpost: featured_signpost
+      intro_text_with_cta: intro_text_with_cta
       introduction_featured_content: introduction_featured_content
       quote: quote
       sign_post_card_group: sign_post_card_group

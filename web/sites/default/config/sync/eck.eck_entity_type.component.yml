@@ -5,6 +5,6 @@ dependencies: {  }
 id: component
 label: Component
 created: false
-changed: false
+changed: true
 uid: false
 title: true

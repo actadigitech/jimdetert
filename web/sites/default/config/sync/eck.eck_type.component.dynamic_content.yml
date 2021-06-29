@@ -1,0 +1,9 @@
+uuid: 1a603b92-3891-4936-ba40-9e8aba72c795
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: dynamic_content
+name: 'Dynamic Content'
+description: 'To add the dynamic content'

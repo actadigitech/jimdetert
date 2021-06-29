@@ -1,0 +1,23 @@
+uuid: 62668765-6fc5-44d7-a0b7-b84be51485b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.inner_banner
+    - field.storage.component.field_white_font
+id: component.inner_banner.field_white_font
+field_name: field_white_font
+entity_type: component
+bundle: inner_banner
+label: 'White Font'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

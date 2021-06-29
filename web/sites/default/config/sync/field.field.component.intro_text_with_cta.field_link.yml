@@ -1,0 +1,23 @@
+uuid: b0776b65-3223-4553-b7be-e09cb99644ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.intro_text_with_cta
+    - field.storage.component.field_link
+  module:
+    - link
+id: component.intro_text_with_cta.field_link
+field_name: field_link
+entity_type: component
+bundle: intro_text_with_cta
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
