@@ -1,0 +1,9 @@
+uuid: e4ece24d-b1f4-4a25-b555-ccea8c704f8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: sign_post_card_group
+name: 'Sign Post Card Group'
+description: 'To add the signpost card group.'

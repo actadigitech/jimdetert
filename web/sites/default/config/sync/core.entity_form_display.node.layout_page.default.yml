@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.layout_page.field_banner
+    - field.field.node.layout_page.field_component
     - node.type.layout_page
+    - workflows.workflow.editorial
   module:
+    - content_moderation
+    - inline_entity_form
     - path
 id: node.layout_page.default
 targetEntityType: node
@@ -20,14 +24,33 @@ content:
     third_party_settings: {  }
   field_banner:
     weight: 7
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
+  field_component:
+    weight: 101
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   path:
     type: path
     weight: 5

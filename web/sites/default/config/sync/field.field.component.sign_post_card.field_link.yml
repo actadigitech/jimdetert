@@ -1,0 +1,23 @@
+uuid: b3c01043-7db2-4e8e-8253-cf7d5b0fe421
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.sign_post_card
+    - field.storage.component.field_link
+  module:
+    - link
+id: component.sign_post_card.field_link
+field_name: field_link
+entity_type: component
+bundle: sign_post_card
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

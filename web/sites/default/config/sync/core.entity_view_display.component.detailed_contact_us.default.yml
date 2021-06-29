@@ -1,0 +1,103 @@
+uuid: ebfccf23-d7c4-4e19-8d18-d1a4798a918e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.detailed_contact_us
+    - field.field.component.detailed_contact_us.field_description
+    - field.field.component.detailed_contact_us.field_email_link
+    - field.field.component.detailed_contact_us.field_google_paper_link
+    - field.field.component.detailed_contact_us.field_intro_image
+    - field.field.component.detailed_contact_us.field_linkedin_link
+    - field.field.component.detailed_contact_us.field_pdf_link
+    - field.field.component.detailed_contact_us.field_title
+  module:
+    - image
+    - link
+    - text
+id: component.detailed_contact_us.default
+targetEntityType: component
+bundle: detailed_contact_us
+mode: default
+content:
+  field_description:
+    weight: -3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_email_link:
+    weight: -1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_google_paper_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_intro_image:
+    weight: -2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_linkedin_link:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_pdf_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: -4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

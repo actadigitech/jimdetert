@@ -1,4 +1,4 @@
-{% set body = eck_entity.field_quote_body.getValue().0.value %}
+{% set body = eck_entity.field_quote.value %}
 
 {% set classes = [
 'message-section',
@@ -9,7 +9,7 @@
   {{ title_suffix }}
   <div class="narrow_width_plus_padding">
     <div class="narrow_width s_inner">
-      <div class="message-section__text">{{ body|raw }}</div>
+      <div class="message-section__text">{{ body }}</div>
     </div>
   </div>
 </section>

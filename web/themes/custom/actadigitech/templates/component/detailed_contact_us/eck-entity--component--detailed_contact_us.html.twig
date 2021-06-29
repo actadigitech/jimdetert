@@ -1,0 +1,111 @@
+{% set body = eck_entity.field_description.getValue().0.value %}
+
+{% set body_title = eck_entity.field_title.value %}
+
+{% set intro_img = eck_entity.field_intro_image.entity.uri.value %}
+{% set image_alt = eck_entity.field_intro_image.entity.uri.value %}
+
+
+{% set email_url = eck_entity.field_email_link.0.url %}
+{% set email_text = eck_entity.field_email_link.0.title %}
+
+{% set linkedin_link = eck_entity.field_linkedin_link.0.url %}
+{% set linkedin_link_text = eck_entity.field_linkedin_link.0.title %}
+
+{% set pdf_link = eck_entity.field_pdf_link.0.url %}
+{% set pdf_link_text = eck_entity.field_pdf_link.0.title %}
+
+{% set google_paper_link = eck_entity.field_google_paper_link.0.url %}
+{% set google_paper_link_text = eck_entity.field_google_paper_link.0.title %}
+
+{% set classes = [
+'about-intro white',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  <div class="content_width_plus_padding">
+    <div class="content_width s_inner">
+      <div class="sidebar_and_content">
+
+        <section class="right_content">
+          <h2 class="flush_with_top_of_letters flush_enough_top section_title">
+            {{ body_title }}
+          </h2>
+          {{ body|raw }}
+        </section>
+
+        <div class="gutter_for_sidebar">
+          <!-- Gutter -->
+        </div>
+
+        <aside class="sidebar">
+          <div class="details_about_jim s_inner">
+            <div class="sbar_img jim bottom_aligned">
+              <img src="{{ file_url(intro_img) }}" alt="{{ image_alt }}">
+            </div>
+            <h2 class="sidebar_title flush_top">
+              Contact Jim
+            </h2>
+            <div class="links_w_small_images">
+              <!-- todo: ask for links -->
+
+              <div class="s_row">
+                <span class="s_image">
+                  <div>
+                  <img src="/themes/custom/actadigitech/images/mail.svg">
+                  </div>
+                </span>
+                <a target="_blank" class="s_text" href="{{ email_url }}">
+                  {{ email_text }}
+                </a>
+              </div>
+              <div class="s_row">
+                <span class="s_image">
+                  <img src="/themes/custom/actadigitech/images/linkedin.svg">
+                </span>
+                <a target="_blank" class="s_text" href="{{ linkedin_link }}">
+                  {{ linkedin_link_text }}
+                </a>
+              </div>
+            </div>
+            <div class="jim_cv">
+              <h2 class="sidebar_title">
+                Read Jim's CV
+              </h2>
+              <div class="links_w_small_images">
+                <!-- todo: quick search for CV in email, then ask, saying may have already got -->
+                <div class="s_row">
+                  <span class="s_image">
+                    <img src="/themes/custom/actadigitech/images/download.svg">
+                  </span>
+                  <a target="_blank" class="s_text" href="{{ pdf_link }}">
+                     {{ pdf_link_text }}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="sidebar_title">
+                See Jim's Academic Papers
+              </h2>
+              <div class="links_w_small_images">
+                <!-- todo: quick search for CV in email, then ask, saying may have already got -->
+                <div class="s_row">
+                  <span class="s_image">
+                    <img src="/themes/custom/actadigitech/images/google-scholar-20px.png">
+                  </span>
+                  <a target="_blank" class="s_text" href="{{ google_paper_link }}">
+                     {{ google_paper_link_text }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>

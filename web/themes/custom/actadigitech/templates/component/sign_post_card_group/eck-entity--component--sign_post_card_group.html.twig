@@ -1,0 +1,30 @@
+{% set sub_title = eck_entity.field_sub_title.value %}
+{% set title = eck_entity.field_title.value %}
+
+{% set link_url = eck_entity.field_link.0.url %}
+{% set link_text = eck_entity.field_link.0.title %}
+
+{% set classes = [
+'start-courage-section',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="narrow_width_plus_padding">
+    <div class="narrow_width s_inner">
+      <div class="start-courage">
+        <h6 class="start-courage__heading">{{ sub_title }}</h6>
+        <p class="start-courage__text">{{ title }}</p>
+        <a target="_blank" href="{{ link_url }}" class="btn btn_primary">{{ link_text }}</a>
+        <div class="start-courage__image-block">
+          <img src="/themes/custom/actadigitech/images/ladder-woman.png" alt="">
+          <img src="/themes/custom/actadigitech/images/ladder-woman-shadow.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  

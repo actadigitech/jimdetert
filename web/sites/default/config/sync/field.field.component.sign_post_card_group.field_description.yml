@@ -1,0 +1,21 @@
+uuid: d2f023e3-c788-4932-92b5-87d06917953f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.sign_post_card_group
+    - field.storage.component.field_description
+  module:
+    - text
+id: component.sign_post_card_group.field_description
+field_name: field_description
+entity_type: component
+bundle: sign_post_card_group
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

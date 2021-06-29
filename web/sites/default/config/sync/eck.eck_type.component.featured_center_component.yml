@@ -1,0 +1,9 @@
+uuid: cdad7bda-09d9-4fc3-b1ae-9ea7a1cc1ce9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: featured_center_component
+name: 'Featured Center Component'
+description: 'To add the center highlighted data'

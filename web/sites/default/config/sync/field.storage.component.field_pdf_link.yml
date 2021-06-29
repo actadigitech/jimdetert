@@ -1,0 +1,19 @@
+uuid: fc690b1a-aeed-4b28-a55f-2df7eb167bb9
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: component.field_pdf_link
+field_name: field_pdf_link
+entity_type: component
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

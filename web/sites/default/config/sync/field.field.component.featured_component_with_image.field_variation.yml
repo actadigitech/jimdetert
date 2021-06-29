@@ -1,0 +1,21 @@
+uuid: ff6b530b-50ec-455c-8f3f-af2ac3685522
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_component_with_image
+    - field.storage.component.field_variation
+  module:
+    - options
+id: component.featured_component_with_image.field_variation
+field_name: field_variation
+entity_type: component
+bundle: featured_component_with_image
+label: Variation
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

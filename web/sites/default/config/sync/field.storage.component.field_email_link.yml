@@ -1,0 +1,19 @@
+uuid: 8ed3bcef-c62d-46d4-8785-b10d9271d90c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: component.field_email_link
+field_name: field_email_link
+entity_type: component
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

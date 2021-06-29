@@ -1,0 +1,25 @@
+uuid: 656e5f06-350e-410d-8b93-c41e8fdf98eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.banner_header
+  module:
+    - views
+  theme:
+    - actadigitech
+id: views_block__banner_header_block_1
+theme: actadigitech
+region: banner
+weight: -6
+provider: null
+plugin: 'views_block:banner_header-block_1'
+settings:
+  id: 'views_block:banner_header-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

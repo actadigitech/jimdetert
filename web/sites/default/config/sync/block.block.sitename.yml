@@ -1,0 +1,25 @@
+uuid: e7907904-df44-4a5b-bf1d-c67723adeca5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0391ea10-5961-4f96-a32b-a21569385a1e'
+  module:
+    - block_content
+  theme:
+    - actadigitech
+id: sitename
+theme: actadigitech
+region: footer
+weight: -4
+provider: null
+plugin: 'block_content:0391ea10-5961-4f96-a32b-a21569385a1e'
+settings:
+  id: 'block_content:0391ea10-5961-4f96-a32b-a21569385a1e'
+  label: 'Site Name'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

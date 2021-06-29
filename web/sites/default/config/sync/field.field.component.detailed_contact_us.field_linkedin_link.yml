@@ -1,0 +1,23 @@
+uuid: b6068015-e25f-41ac-bc46-b510b11ab1eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.detailed_contact_us
+    - field.storage.component.field_linkedin_link
+  module:
+    - link
+id: component.detailed_contact_us.field_linkedin_link
+field_name: field_linkedin_link
+entity_type: component
+bundle: detailed_contact_us
+label: 'LinkedIn Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

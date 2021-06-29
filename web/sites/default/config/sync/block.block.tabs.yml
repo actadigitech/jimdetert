@@ -1,0 +1,20 @@
+uuid: 10640a45-2934-4d89-b442-6dd25746aafb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - actadigitech
+id: tabs
+theme: actadigitech
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -8,9 +8,11 @@ dependencies:
     - field.field.component.featured_component_with_image.field_display_title
     - field.field.component.featured_component_with_image.field_link
     - field.field.component.featured_component_with_image.field_side_image
+    - field.field.component.featured_component_with_image.field_variation
   module:
     - image
     - link
+    - options
     - text
 id: component.featured_component_with_image.default
 targetEntityType: component
@@ -51,6 +53,13 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_variation:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   title:
     label: hidden

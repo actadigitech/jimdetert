@@ -25,8 +25,11 @@
         "drupal/eck": "^1.0@beta",
         "drupal/imce": "^2.4",
         "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/pathauto": "^1.8",
         "drupal/social_media_links": "^2.8",
         "drupal/social_sharing": "^1.0@alpha",
+        "drupal/svg_image": "^1.14",
+        "drupal/twig_tweak": "^2.9",
         "drush/drush": "8.*"
     },
     "require-dev": {

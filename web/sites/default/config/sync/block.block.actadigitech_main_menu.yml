@@ -12,8 +12,8 @@ _core:
   default_config_hash: ERtUwuUKdqiRLiXjBoV7gcIIZgt2IdqWBzqsqtm63w4
 id: actadigitech_main_menu
 theme: actadigitech
-region: navigation_collapsible
-weight: -7
+region: navigation
+weight: -2
 provider: null
 plugin: 'system_menu_block:main'
 settings:

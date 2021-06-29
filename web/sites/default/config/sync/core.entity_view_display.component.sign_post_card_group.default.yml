@@ -1,0 +1,39 @@
+uuid: 76e66daa-081b-4fcb-a72d-6da401baf197
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.sign_post_card_group
+    - field.field.component.sign_post_card_group.field_add_card
+    - field.field.component.sign_post_card_group.field_description
+  module:
+    - text
+id: component.sign_post_card_group.default
+targetEntityType: component
+bundle: sign_post_card_group
+mode: default
+content:
+  field_add_card:
+    weight: -3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_description:
+    weight: -4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

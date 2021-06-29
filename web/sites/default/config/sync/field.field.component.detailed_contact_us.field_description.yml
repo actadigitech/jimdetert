@@ -1,0 +1,21 @@
+uuid: 41969172-de46-4d4a-b931-6659207a65c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.detailed_contact_us
+    - field.storage.component.field_description
+  module:
+    - text
+id: component.detailed_contact_us.field_description
+field_name: field_description
+entity_type: component
+bundle: detailed_contact_us
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

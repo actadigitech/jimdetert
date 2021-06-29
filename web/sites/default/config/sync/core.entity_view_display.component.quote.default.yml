@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - eck.eck_type.component.quote
+    - field.field.component.quote.field_quote
     - field.field.component.quote.field_quote_body
   module:
     - text
@@ -12,6 +13,13 @@ targetEntityType: component
 bundle: quote
 mode: default
 content:
+  field_quote:
+    weight: -3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   field_quote_body:
     weight: -4
     label: above

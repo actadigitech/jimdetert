@@ -1,0 +1,9 @@
+uuid: f74a8c59-f5c9-4f1b-aa63-b0f45d43acbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: sign_post_card
+name: 'Sign Post Card'
+description: 'To add the signpost card individual item.'

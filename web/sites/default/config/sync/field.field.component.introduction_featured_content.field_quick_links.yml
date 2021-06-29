@@ -1,0 +1,23 @@
+uuid: 38475d3d-0e6a-4575-9d85-96c4cfd20029
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.introduction_featured_content
+    - field.storage.component.field_quick_links
+  module:
+    - link
+id: component.introduction_featured_content.field_quick_links
+field_name: field_quick_links
+entity_type: component
+bundle: introduction_featured_content
+label: 'Quick Links'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

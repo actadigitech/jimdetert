@@ -8,6 +8,7 @@ dependencies:
     - field.field.component.featured_component_with_image.field_display_title
     - field.field.component.featured_component_with_image.field_link
     - field.field.component.featured_component_with_image.field_side_image
+    - field.field.component.featured_component_with_image.field_variation
     - image.style.thumbnail
   module:
     - image
@@ -49,6 +50,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_variation:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   title:
     type: string_textfield

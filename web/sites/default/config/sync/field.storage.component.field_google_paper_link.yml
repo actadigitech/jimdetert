@@ -1,0 +1,19 @@
+uuid: 63271b0c-26ea-43c7-aa4a-fd27e38215a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: component.field_google_paper_link
+field_name: field_google_paper_link
+entity_type: component
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

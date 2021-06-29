@@ -1,0 +1,29 @@
+uuid: f2b11528-cf99-4a50-afa1-f73c9658df66
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.sign_post_card
+    - eck.eck_type.component.sign_post_card_group
+    - field.storage.component.field_add_card
+id: component.sign_post_card_group.field_add_card
+field_name: field_add_card
+entity_type: component
+bundle: sign_post_card_group
+label: 'Add Card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings:
+    target_bundles:
+      sign_post_card: sign_post_card
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

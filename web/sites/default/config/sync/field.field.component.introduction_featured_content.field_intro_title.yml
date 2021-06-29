@@ -1,0 +1,19 @@
+uuid: 82359531-e138-4b9a-958a-7d7c89c499ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.introduction_featured_content
+    - field.storage.component.field_intro_title
+id: component.introduction_featured_content.field_intro_title
+field_name: field_intro_title
+entity_type: component
+bundle: introduction_featured_content
+label: 'Intro Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

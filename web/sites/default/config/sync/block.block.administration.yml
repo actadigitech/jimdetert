@@ -1,0 +1,25 @@
+uuid: bf4b6d4c-e28a-4dee-a806-56be30bf0938
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - actadigitech
+id: administration
+theme: actadigitech
+region: navigation
+weight: -4
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administration
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

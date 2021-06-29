@@ -1,7 +1,10 @@
 framework:
   css:
     theme:
+      static/css/main.css: {}
+      static/style.css: {}
       css/style.css: {}
+
 
 # Uncomment for LESS source JavaScript files.
 #  js:

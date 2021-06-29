@@ -1,0 +1,23 @@
+uuid: abc22b8c-ea99-46d7-86c5-0d1ab541452e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.detailed_contact_us
+    - field.storage.component.field_email_link
+  module:
+    - link
+id: component.detailed_contact_us.field_email_link
+field_name: field_email_link
+entity_type: component
+bundle: detailed_contact_us
+label: 'Email Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

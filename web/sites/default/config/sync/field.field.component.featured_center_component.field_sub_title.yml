@@ -1,0 +1,19 @@
+uuid: f0e6b760-d7f3-49d2-a199-eb40b31ae0ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_center_component
+    - field.storage.component.field_sub_title
+id: component.featured_center_component.field_sub_title
+field_name: field_sub_title
+entity_type: component
+bundle: featured_center_component
+label: 'Sub Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

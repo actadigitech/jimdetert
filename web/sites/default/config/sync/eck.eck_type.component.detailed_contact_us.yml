@@ -1,0 +1,9 @@
+uuid: 63b8549c-ca60-473a-a0f1-b583565d0619
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: detailed_contact_us
+name: 'Detailed Contact Us'
+description: 'To add the detailed contact details'

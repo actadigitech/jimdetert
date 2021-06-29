@@ -1,0 +1,38 @@
+uuid: b2344062-db00-49f0-acf4-d49e051c170e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.detailed_contact_us
+    - field.storage.component.field_intro_image
+  module:
+    - image
+id: component.detailed_contact_us.field_intro_image
+field_name: field_intro_image
+entity_type: component
+bundle: detailed_contact_us
+label: 'Intro Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

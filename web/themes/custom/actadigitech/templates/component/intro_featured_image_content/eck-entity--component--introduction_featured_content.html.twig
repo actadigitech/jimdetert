@@ -1,0 +1,36 @@
+{% set body = eck_entity.field_description.getValue().0.value %}
+{% set body_title = eck_entity.field_intro_title.value %}
+{% set intro_img = eck_entity.field_intro_image.entity.uri.value %}
+{% set image_alt = eck_entity.field_intro_image.entity.uri.value %}
+{% set links = eck_entity.field_quick_links %}
+
+{% set link_url = eck_entity.field_link.0.url %}
+{% set link_text = eck_entity.field_link.0.title %}
+
+{% set classes = [
+'intro-jim',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="content_width_plus_padding">
+    <div class="content_width s_inner">
+      <div class="meet">
+        <div class="col">
+          <img src="{{ file_url(intro_img) }}" alt="{{ image_alt }}">
+        </div>
+        <div class="col">
+          <h2 class="meet__heading">{{ body_title }}</h2>
+          <div class="meet__text">{{ body|raw }}</div>
+          <ul class="meet__social">
+            {% for key,subentity in links if key|first != '#' %}
+              <li><a target="{{ subentity.options['attributes']['target'] }}" href="{{ subentity.url}}"><i class="{{ subentity.options['attributes']['class'] }}"></i></a></li>
+            {% endfor %}
+          </ul>
+          <a href="{{ link_url }}" class="btn btn_primary">{{ link_text }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

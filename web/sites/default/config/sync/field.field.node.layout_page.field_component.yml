@@ -1,0 +1,43 @@
+uuid: a8b5f781-01b5-430a-91ef-80c24f172aac
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.configurable_text
+    - eck.eck_type.component.detailed_contact_us
+    - eck.eck_type.component.featured_center_component
+    - eck.eck_type.component.featured_component_with_image
+    - eck.eck_type.component.featured_signpost
+    - eck.eck_type.component.introduction_featured_content
+    - eck.eck_type.component.quote
+    - eck.eck_type.component.sign_post_card_group
+    - field.storage.node.field_component
+    - node.type.layout_page
+id: node.layout_page.field_component
+field_name: field_component
+entity_type: node
+bundle: layout_page
+label: Component
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings:
+    target_bundles:
+      configurable_text: configurable_text
+      detailed_contact_us: detailed_contact_us
+      featured_center_component: featured_center_component
+      featured_component_with_image: featured_component_with_image
+      featured_signpost: featured_signpost
+      introduction_featured_content: introduction_featured_content
+      quote: quote
+      sign_post_card_group: sign_post_card_group
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: featured_signpost
+field_type: entity_reference

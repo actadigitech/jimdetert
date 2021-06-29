@@ -1,0 +1,19 @@
+uuid: 6e1014de-cb72-4578-90f4-8548c207d653
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: component.field_add_card
+field_name: field_add_card
+entity_type: component
+type: entity_reference
+settings:
+  target_type: component
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

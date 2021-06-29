@@ -11,7 +11,7 @@ dependencies:
 id: stayupdated
 theme: actadigitech
 region: footer
-weight: 0
+weight: -2
 provider: null
 plugin: 'block_content:617af590-1412-446d-85ed-13dad8fef587'
 settings:

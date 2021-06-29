@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.layout_page.field_banner
+    - field.field.node.layout_page.field_component
     - node.type.layout_page
   module:
     - user
@@ -13,6 +14,11 @@ targetEntityType: node
 bundle: layout_page
 mode: teaser
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -20,4 +26,5 @@ content:
     region: content
 hidden:
   field_banner: true
+  field_component: true
   social_sharing: true

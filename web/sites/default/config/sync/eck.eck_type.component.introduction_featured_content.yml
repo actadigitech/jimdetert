@@ -1,0 +1,9 @@
+uuid: 4ecdf08c-0519-4f85-bfce-029d8bc65fbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: introduction_featured_content
+name: 'Introduction Featured Content'
+description: 'To add the intro feature content.'
