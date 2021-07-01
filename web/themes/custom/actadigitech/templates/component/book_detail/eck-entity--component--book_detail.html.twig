@@ -1,0 +1,64 @@
+{% set book_desc = eck_entity.field_book_description.getValue().0.value %}
+{% set quote = eck_entity.field_book_quote.getValue().0.value %}
+
+{% set title = eck_entity.field_quick_link_title.value %}
+{% set sub_title = eck_entity.field_quick_link_sub_title.value %}
+
+{% set book_image = eck_entity.field_book_cover_.entity.uri.value %}
+
+{% set chapter_link = eck_entity.field_chapter_link.0.url %}
+{% set chapter_link_text = eck_entity.field_chapter_link.0.title %}
+
+{% set links = eck_entity.field_quick_links %}
+
+{% set classes = [
+'opportunities-section main-courage',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+<section class="book intro intro_book">
+    <div class="content_width_plus_padding">
+      <div class="content_width s_inner">
+        <div class="book__block">
+          <div class="book__order">
+            <img class="book__image" src="{{ file_url(book_image) }}" alt="">
+            <div class="intro__button-block"><!-- hidden by CSS -->
+              <div class="intro__download-button">
+                <a href="{{ chapter_link }}" target="_blank">
+                  <i class="icon-download-thin"></i>
+                </a>
+              </div>
+              <span class="intro__button-text">
+                <a href="{{ chapter_link }}" target="_blank">
+                  {{ chapter_link_text }}
+                </a>
+              </span>
+            </div>
+            <div class="intro__bottom">
+              <div class="intro__order-text">
+                <div class="intro__order-text-heading">{{ title }}</div>
+                <div class="intro__order-text-date">{{ sub_title }}</div>
+              </div>
+              <div class="intro__stores-list">
+                {% for key,subentity in links if key|first != '#' %}
+                  <a class="btn btn_primary" target="{{ subentity.options['attributes']['target'] }}" href="{{ subentity.url}}">{{ subentity.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="book__content">
+            <div class="book__content-top">
+              <div class="book__quote-block">
+                {{ quote|raw }}
+              </div>
+            <div class="book__content-bottom">
+              {{ book_desc|raw }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
