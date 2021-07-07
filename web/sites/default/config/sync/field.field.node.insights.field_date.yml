@@ -1,0 +1,21 @@
+uuid: c1be45d3-5cb1-47c2-92b7-f20c1b092fa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.insights
+  module:
+    - datetime
+id: node.insights.field_date
+field_name: field_date
+entity_type: node
+bundle: insights
+label: Date
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

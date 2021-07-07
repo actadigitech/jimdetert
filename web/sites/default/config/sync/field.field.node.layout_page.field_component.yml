@@ -3,16 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
+    - eck.eck_type.component.book_detail
     - eck.eck_type.component.configurable_text
     - eck.eck_type.component.detailed_contact_us
     - eck.eck_type.component.dynamic_content
     - eck.eck_type.component.featured_center_component
+    - eck.eck_type.component.featured_center_simple
     - eck.eck_type.component.featured_component_with_image
     - eck.eck_type.component.featured_signpost
     - eck.eck_type.component.intro_text_with_cta
     - eck.eck_type.component.introduction_featured_content
     - eck.eck_type.component.quote
     - eck.eck_type.component.sign_post_card_group
+    - eck.eck_type.component.slider_component_with_descriptio
+    - eck.eck_type.component.webform_and_contact_us
     - field.storage.node.field_component
     - node.type.layout_page
 id: node.layout_page.field_component
@@ -29,9 +33,11 @@ settings:
   handler: 'default:component'
   handler_settings:
     target_bundles:
+      book_detail: book_detail
       configurable_text: configurable_text
       detailed_contact_us: detailed_contact_us
       dynamic_content: dynamic_content
+      featured_center_simple: featured_center_simple
       featured_center_component: featured_center_component
       featured_component_with_image: featured_component_with_image
       featured_signpost: featured_signpost
@@ -39,6 +45,8 @@ settings:
       introduction_featured_content: introduction_featured_content
       quote: quote
       sign_post_card_group: sign_post_card_group
+      slider_component_with_descriptio: slider_component_with_descriptio
+      webform_and_contact_us: webform_and_contact_us
     sort:
       field: _none
       direction: ASC

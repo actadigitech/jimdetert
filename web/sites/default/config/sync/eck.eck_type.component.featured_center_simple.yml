@@ -1,0 +1,9 @@
+uuid: 8c7b823c-9068-4f04-b531-3a8eab83ba61
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: featured_center_simple
+name: 'Featured Center - Simple'
+description: 'To add the simple featured component.'

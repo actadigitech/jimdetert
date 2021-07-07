@@ -1,0 +1,23 @@
+uuid: 0a9414f9-4e09-4bbf-b09b-570139e897da
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.book_detail
+    - field.storage.component.field_chapter_link
+  module:
+    - link
+id: component.book_detail.field_chapter_link
+field_name: field_chapter_link
+entity_type: component
+bundle: book_detail
+label: 'Chapter Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

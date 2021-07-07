@@ -1,0 +1,9 @@
+uuid: edab02dc-f2a6-4874-8af8-50b87dbc4ccf
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: slider_component_with_descriptio
+name: 'Slider Component with Description'
+description: 'To add the slider component with description.'

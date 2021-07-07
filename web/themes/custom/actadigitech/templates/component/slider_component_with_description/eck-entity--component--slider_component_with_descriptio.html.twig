@@ -1,0 +1,43 @@
+{% set title = eck_entity.title.value %}
+{% set image_url = eck_entity.field_side_image.entity.uri.value %}
+{% set image_alt = eck_entity.field_side_image.entity.uri.value %}
+{% set items = eck_entity.field_add_component %}
+{% set link_url = eck_entity.field_link.0.url %}
+{% set link_text = eck_entity.field_link.0.title %}
+
+{% set classes = [
+'courage-gallery-section',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+    <div class="medium_width">
+      <h2 class="flush_with_top_of_letters section_title">{{ title }}</h2>
+      <div class="text-gallery">
+        <div class="text-gallery__tabs-block">
+          <div class="slick-arrow prev"><img src="/themes/custom/actadigitech/images/arrow-left.svg" alt=""></div>
+          <div class="text-gallery__tabs slider-nav">
+            {% for key,subentity in items if key|first != '#' %}
+              <div class="text-gallery__tab">{{ subentity.entity.title.value }}</div>
+            {% endfor %}
+          </div>
+          <div class="slick-arrow next"><img src="/themes/custom/actadigitech/images/arrow-left.svg" alt=""></div>
+        </div>
+        <div class="text-gallery__content-block">
+          <div class="slick-arrow prev"><img src="/themes/custom/actadigitech/images/arrow-left.svg" alt=""></div>
+          <div class="slider-for">
+              {% for key,subentity in items if key|first != '#' %}
+                <div class="text-gallery__item">
+                  <h3>{{ subentity.entity.title.value }}</h4>
+                  <div class="text-gallery__text df-row">
+                    {{ subentity.entity.field_description.getValue().0.value|raw }}
+                  </div>
+                </div>
+              {% endfor %}
+          </div>
+          <div class="slick-arrow next"><img src="/themes/custom/actadigitech/images/arrow-left.svg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>

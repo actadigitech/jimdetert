@@ -1,0 +1,29 @@
+uuid: ab774544-bede-4bb8-99f4-259832c6398d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.configurable_text
+    - eck.eck_type.component.slider_component_with_descriptio
+    - field.storage.component.field_add_component
+id: component.slider_component_with_descriptio.field_add_component
+field_name: field_add_component
+entity_type: component
+bundle: slider_component_with_descriptio
+label: 'Add Component'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings:
+    target_bundles:
+      configurable_text: configurable_text
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

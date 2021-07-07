@@ -1,0 +1,19 @@
+uuid: 5769415d-4e8b-40eb-a0dd-ef58bf770fa3
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: component.field_book_quote
+field_name: field_book_quote
+entity_type: component
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

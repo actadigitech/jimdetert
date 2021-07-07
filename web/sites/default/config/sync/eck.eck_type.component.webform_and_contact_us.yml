@@ -1,0 +1,9 @@
+uuid: ff0cceb0-b046-4095-ac32-8e42a5b53655
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: webform_and_contact_us
+name: 'Webform and Contact Us'
+description: 'To add the contact us details.'

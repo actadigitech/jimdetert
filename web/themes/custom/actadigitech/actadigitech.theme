@@ -8,7 +8,6 @@
  */
 
 use Drupal\node\NodeInterface;
-use Drupal\Core\Url;
 
 /**
  * Preprocess page function to manage the page variables.
@@ -16,25 +15,25 @@ use Drupal\Core\Url;
 function actadigitech_preprocess_page(&$variables) {
   $node = \Drupal::routeMatch()->getParameter('node');
   if ($node instanceof NodeInterface) {
-    if($node->bundle() == 'layout_page') {
+    if ($node->bundle() == 'layout_page') {
       // You can get nid and anything else you need from the node object.
       $banner_eck = $node->get('field_banner')->referencedEntities();
       if (!empty($banner_eck) && isset($banner_eck)) {
         $banner_eck = reset($banner_eck);
-        if($banner_eck->bundle() == 'banner_content') {
+        $variables['banner_class'] = '';
+        if ($banner_eck->bundle() == 'banner_content') {
           $banner_image_url = $banner_eck->field_background_image->entity->uri->value;
           $url = file_create_url($banner_image_url);
           $variables['banner_url'] = $url;
           $variables['banner_class'] = 'grey';
         }
-        if($banner_eck->bundle() == 'inner_banner') {
+        if ($banner_eck->bundle() == 'inner_banner') {
           $variables['banner_class'] = $banner_eck->field_background_colour->value;
         }
       }
     }
   }
 }
-
 
 /**
  * Preprocess html function to manage the page variables.

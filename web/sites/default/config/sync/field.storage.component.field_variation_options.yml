@@ -1,0 +1,27 @@
+uuid: 9045c84b-1e1d-4e14-a265-82cdabe6463c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: component.field_variation_options
+field_name: field_variation_options
+entity_type: component
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: variation_1
+      label: 'variation 1'
+    -
+      value: variation_2
+      label: 'variation 2'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

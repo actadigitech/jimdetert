@@ -1,0 +1,88 @@
+uuid: 200a520a-c34b-4fc4-bf3b-bd3aec97f58b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.book_detail
+    - field.field.component.book_detail.field_book_cover_
+    - field.field.component.book_detail.field_book_description
+    - field.field.component.book_detail.field_book_quote
+    - field.field.component.book_detail.field_chapter_link
+    - field.field.component.book_detail.field_quick_link_sub_title
+    - field.field.component.book_detail.field_quick_link_title
+    - field.field.component.book_detail.field_quick_links
+    - image.style.thumbnail
+  module:
+    - link
+    - svg_image
+    - text
+id: component.book_detail.default
+targetEntityType: component
+bundle: book_detail
+mode: default
+content:
+  field_book_cover_:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_book_description:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_book_quote:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_chapter_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_quick_link_sub_title:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_quick_link_title:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_quick_links:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

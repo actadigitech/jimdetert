@@ -1,0 +1,21 @@
+uuid: a49f2d55-1fd8-4b7e-b3bd-a693cc13fe50
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.book_detail
+    - field.storage.component.field_book_description
+  module:
+    - text
+id: component.book_detail.field_book_description
+field_name: field_book_description
+entity_type: component
+bundle: book_detail
+label: 'Book Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

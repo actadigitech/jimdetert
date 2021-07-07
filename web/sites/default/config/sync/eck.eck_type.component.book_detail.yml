@@ -1,0 +1,9 @@
+uuid: e5d7313e-6a7d-436d-8200-44a7b14e0361
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+type: book_detail
+name: 'Book Detail'
+description: 'To add the book details. '

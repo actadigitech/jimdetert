@@ -1,0 +1,54 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a view template to display a list of rows.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the container.
+ * - rows: A list of rows for this list.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's contents.
+ * - title: The title of this group of rows. May be empty.
+ * - list: @todo.
+ *   - type: Starting tag will be either a ul or ol.
+ *   - attributes: HTML attributes for the list element.
+ *
+ * @see template_preprocess_views_view_list()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<section class="section_news">
+    <div class="medium_width_plus_padding">
+        <h2 class="main-title text-center">In the News</h2>
+        <div class="section_news__holder tab-content">
+            <div id="tab-1" class="tab active">
+                <ul class="article-news article paginate paginate-0">
+                    {% for key,row in rows  %}
+                        <li class="article__item" style="opacity: 1;">
+                            <div class="article__row df-row">
+                                <div class="image_column col-sm-3 col-md-4">
+                                    <div class="logo-holder">
+                                        <img src="{{ row.columns.field_news_image.content }}" alt="">
+                                    </div>
+                                </div>
+                                <div class="text_column col-sm-9 col-md-8">
+                                    <div class="article__top">
+                                        <span class="article__name">{{ row.columns.field_tag_line.content }}</span>
+                                        <span>&nbsp;|&nbsp;</span>
+                                        <span class="article__time"><time>{{ row.columns.field_date.content }}</time></span>
+                                    </div>
+                                    <h3 class="article__heading">
+                                        {{ row.columns.title.content }}
+                                    </h3>
+                                    <span class="author">{{ row.columns.field_sub_title.content }}</span>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

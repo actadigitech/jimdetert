@@ -1,0 +1,21 @@
+uuid: f924d7bf-7ae8-4eac-80f0-8b5d187f4a40
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.book_detail
+    - field.storage.component.field_book_quote
+  module:
+    - text
+id: component.book_detail.field_book_quote
+field_name: field_book_quote
+entity_type: component
+bundle: book_detail
+label: 'Book Quote'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

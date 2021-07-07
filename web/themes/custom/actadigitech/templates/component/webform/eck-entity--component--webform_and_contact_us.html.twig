@@ -1,0 +1,25 @@
+{% set body = eck_entity.field_description.getValue().0.value %}
+
+{% set classes = [
+'white',
+] %}
+
+<section{{ attributes.addClass(classes).setAttribute('id', 'only_contact_section') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="content_width_plus_padding">
+    <div class="content_width s_inner">
+      <div class="multi_column s_2_columns">
+        <div class="s_left contact_page_text">
+          {{ body|raw }}
+        </div>
+        <div class="s_gutter">
+          <!-- Gutter for columns -->
+        </div>
+        <div class="s_right contact_page_form">
+          {{ content.field_form }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

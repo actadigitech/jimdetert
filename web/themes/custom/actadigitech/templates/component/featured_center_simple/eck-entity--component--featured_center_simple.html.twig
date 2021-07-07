@@ -1,0 +1,61 @@
+{% set body = eck_entity.field_description.getValue().0.value %}
+{% set intro_text = eck_entity.field_intro_text.getValue().0.value %}
+{% set body_title = eck_entity.field_title.value %}
+{% set image_url = eck_entity.field_intro_image.entity.uri.value %}
+{% set image_alt = eck_entity.field_intro_image.entity.uri.value %}
+
+{% set variation_options = eck_entity.field_variation_options.value %}
+{% set link_url = eck_entity.field_link.0.url %}
+{% set link_text = eck_entity.field_link.0.title %}
+
+{% if variation_options == 'variation_1' %}
+
+  {% set classes = [
+  'climb-section',
+  ] %}
+
+  <section{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+      <div class="container">
+        <div class="ladder">
+          <div class="ladder__image-block">
+            <img src="{{ file_url(image_url) }}" alt="">
+          </div>
+          <div class="ladder__text-block">
+            <h3>{{ body_title }}</h3>
+            {{ body|raw }}
+            <div class="ladder__btn">
+              <a href="{{ link_url }}" target="_blank" class="btn btn_primary">{{ link_text }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% else %}
+  
+    {% set classes = [
+    'resources-section',
+    ] %}
+<section{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <div class="container">
+      {{ intro_text|raw }}
+      <div class="journey-invitation">
+        <div class="journey-invitation__text-block">
+          <h3>{{ body_title }}</h3>
+          {{ body|raw }}
+          <div class="journey-invitation__btn">
+            <a href="{{ link_url }}" class="btn btn_secondary">{{ link_text }}</a>
+          </div>
+        </div>
+        <div class="journey-invitation__image-block">
+          <img src="{{ file_url(image_url) }}" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endif %}

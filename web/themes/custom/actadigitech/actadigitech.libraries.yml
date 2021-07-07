@@ -4,6 +4,9 @@ framework:
       static/css/main.css: {}
       static/style.css: {}
       css/style.css: {}
+  js:
+    static/js/slick.main.js: {}
+    static/js/custom.js: {}
 
 
 # Uncomment for LESS source JavaScript files.

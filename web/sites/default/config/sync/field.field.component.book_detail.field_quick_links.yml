@@ -1,0 +1,23 @@
+uuid: 868fc172-70ac-4b8f-94a2-779c5bb95992
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.book_detail
+    - field.storage.component.field_quick_links
+  module:
+    - link
+id: component.book_detail.field_quick_links
+field_name: field_quick_links
+entity_type: component
+bundle: book_detail
+label: 'Quick Links'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,40 @@
+uuid: 26054602-3a0f-4e99-a5a5-7bec35a2017b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.slider_component_with_descriptio
+    - field.field.component.slider_component_with_descriptio.field_add_component
+  module:
+    - inline_entity_form
+id: component.slider_component_with_descriptio.default
+targetEntityType: component
+bundle: slider_component_with_descriptio
+mode: default
+content:
+  field_add_component:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

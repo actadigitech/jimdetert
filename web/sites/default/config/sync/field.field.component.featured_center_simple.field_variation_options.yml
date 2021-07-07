@@ -1,0 +1,21 @@
+uuid: f6935528-4ca1-4c86-841c-99a996a5850b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_center_simple
+    - field.storage.component.field_variation_options
+  module:
+    - options
+id: component.featured_center_simple.field_variation_options
+field_name: field_variation_options
+entity_type: component
+bundle: featured_center_simple
+label: 'Variation Options'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

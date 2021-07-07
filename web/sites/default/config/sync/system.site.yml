@@ -3,8 +3,8 @@ name: 'Jim Detert'
 mail: skshukla96@gmail.com
 slogan: ''
 page:
-  403: ''
-  404: ''
+  403: /node/7
+  404: /node/8
   front: /node/1
 admin_compact_mode: false
 weight_select_max: 100

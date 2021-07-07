@@ -1,0 +1,27 @@
+uuid: 5ee104ae-f030-49b4-b3c0-034f74a82379
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.insights.field_date
+    - field.field.node.insights.field_news_image
+    - field.field.node.insights.field_news_link
+    - node.type.insights
+  module:
+    - user
+id: node.insights.teaser
+targetEntityType: node
+bundle: insights
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_date: true
+  field_news_image: true
+  field_news_link: true
+  social_sharing: true

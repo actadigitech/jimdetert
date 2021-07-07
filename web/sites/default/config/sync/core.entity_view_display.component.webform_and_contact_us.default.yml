@@ -1,0 +1,41 @@
+uuid: 5baa0982-7bfd-4f6c-b0b9-6c782fea9dc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.webform_and_contact_us
+    - field.field.component.webform_and_contact_us.field_description
+    - field.field.component.webform_and_contact_us.field_form
+  module:
+    - text
+id: component.webform_and_contact_us.default
+targetEntityType: component
+bundle: webform_and_contact_us
+mode: default
+content:
+  field_description:
+    weight: -4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_form:
+    weight: -3
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true

@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a view template to display a list of rows.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the container.
+ * - rows: A list of rows for this list.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's contents.
+ * - title: The title of this group of rows. May be empty.
+ * - list: @todo.
+ *   - type: Starting tag will be either a ul or ol.
+ *   - attributes: HTML attributes for the list element.
+ *
+ * @see template_preprocess_views_view_list()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<section class="section-blog">
+    <div class="content_width_plus_padding">
+        <h2 class="flush_with_top_of_letters section_title">Insights from Jim</h2>
+        <div class="ajax-filters-container">
+            <div class="ajax-filter-holder">
+                <div class="load-more-box">
+                    <div class="df-row ajax-load-content">
+                        <div class="card_ct col-sm-6 col-lg-4">
+                            {% for key,row in rows  %}
+                                <article class="card">
+                                    <div class="card-header">
+                                        <time>{{ row.columns.field_date.content }}</time>
+                                        <p>
+                                            {{ row.columns.title.content }}
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <a target="_blank" href="{{ field_news_link }}" class="card-img">
+                                            <img src="{{ row.columns.field_news_image.content }}" width="363" height="221" alt="">
+                                        </a>   
+                                    </div>
+                                </article>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

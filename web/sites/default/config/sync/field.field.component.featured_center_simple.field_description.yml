@@ -1,0 +1,21 @@
+uuid: 8c3aa49c-9a18-4e5b-9282-e1621cddc236
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_center_simple
+    - field.storage.component.field_description
+  module:
+    - text
+id: component.featured_center_simple.field_description
+field_name: field_description
+entity_type: component
+bundle: featured_center_simple
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

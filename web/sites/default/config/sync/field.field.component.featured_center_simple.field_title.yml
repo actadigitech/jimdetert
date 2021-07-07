@@ -1,0 +1,19 @@
+uuid: c996be15-ed9c-4f0b-97b9-1d04cae1b33e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.featured_center_simple
+    - field.storage.component.field_title
+id: component.featured_center_simple.field_title
+field_name: field_title
+entity_type: component
+bundle: featured_center_simple
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
