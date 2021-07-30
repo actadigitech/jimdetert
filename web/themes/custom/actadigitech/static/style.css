@@ -711,8 +711,11 @@ footer h6 {
 	.flex_item {
 	}
 
-	.flex_item.s_1 {
+	.flex_item.s_1:not(.site_name), footer .foot > div.site_name {
 		width: 34.5%;
+	}
+	#block-stayupdated{
+		width: 39.5%;
 	}
 
 	.flex_item.s_2 {
@@ -759,7 +762,7 @@ footer .site_name {
 }
 
 .email_and_social_media .s_email .s_first {
-/* 	margin: 1em 0; default, not needed */
+	margin: 1em 0;
 }
 
 .social_container {

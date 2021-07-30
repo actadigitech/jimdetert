@@ -687,6 +687,9 @@ footer.footer a {
 footer.footer a:hover {
     color: #0094d9;
 }
+footer.footer ul.menu li a{
+    font-weight: normal;
+}
 footer .social_icons {
     margin-top: 30px;
     display: flex;
