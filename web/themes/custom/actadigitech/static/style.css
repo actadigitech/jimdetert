@@ -55,23 +55,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* - Base elements (html & body) */
-
-html {
-	font-size: 16px;
-	/* ↑ This is the default size for most browsers
-	anyway - I think I need to set it to use my
-	rem-global/em-local approach though */
+html{
+	font-size: 10px;
+	-webkit-text-size-adjust: none;
+}
+html, body {
+	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
+	color: #000;
 }
 
-body {
-/* 	background-color: #FAFAE8; */
-	font-size: 1rem;
-	/* ↑ Creating a base parent module whose size
-	I can increase to eg 1.2rem to increase the size
-	of child elements sized in em, a la my
-	rem-global/em-local approach  */
-
-	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
+body{
+	font-size: 1.7rem;
 }
 
 /* Not needed:
@@ -133,8 +127,8 @@ a:visited {
 /* --- Paragraphs */
 
 p {
-	line-height: 1.5em;
-/* 	↑ 24px relative to the 16px root font size */
+	font-size: 1.75rem;
+	line-height: 2.7rem;
 }
 
 /* --- Headings */
@@ -147,7 +141,6 @@ h5,
 h6 {
 	font-family: 'Libre Baskerville', 'Baskerville', serif;
 	font-family: var(--cc-basker);
-
 	font-weight: normal;
 }
 
@@ -637,9 +630,7 @@ nav.breadcrumb {
 footer {
 	background-color: #0A3B56;
 	padding-top: 104px;
-
 	color: white;
-	
 	letter-spacing: 0.02em;
 }
 

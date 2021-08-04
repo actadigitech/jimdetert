@@ -3690,16 +3690,13 @@ a.btn_icon img {
 }
 
 .intro__quote {
-	font-size: 58px;
-	line-height: 1.33em;
-	letter-spacing: 0.01em;
-	margin: 0 0 20px;
+	font-size: 5.8rem;
+	line-height: 7.5rem;
 	position: relative;
-	letter-spacing: 1.1px;
-  padding: 0;
-  border-left: 0;
-  font-family: var(--cc-basker);
-  letter-spacing: 0.4px;
+	padding: 0;
+	border-left: 0;
+	font-family: var(--cc-basker);
+	letter-spacing: 0.4px;
 }
 
 @media (max-width: 767px) {
@@ -3754,7 +3751,7 @@ a.btn_icon img {
 }
 
 .intro__quote-author {
-	font-size: 22px;
+	font-size: 2.2rem;
 	color: #aebbc7;
 	letter-spacing: 0.04em;
 	/*
@@ -4121,12 +4118,12 @@ a.btn_icon img {
 	line-height: 1;
 	margin: 0 0 23px;
 	letter-spacing: .4px;
-  font-size: 40px;
+	font-size: 4rem;
 }
 
 @media (min-width: 768px) {
 	.meet__heading {
-		margin: 0 0 55px;
+		margin: 0 0 35px;
 	}
 }
 
