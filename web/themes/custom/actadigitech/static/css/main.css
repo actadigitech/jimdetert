@@ -1746,7 +1746,7 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 
 @media (min-width: 1024px) {
 	.articles-page .start-courage {
-		position: static;
+		position: relative;
 	}
 }
 
