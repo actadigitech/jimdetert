@@ -1862,7 +1862,6 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 
 .article-intro {
 	padding-bottom: 130px;
-	margin-top: 100px;
 }
 
 .article-intro h2 {
@@ -2014,6 +2013,10 @@ header {
 .opportunities-section .container {
 	max-width: 968px;
 	margin: 0 auto;
+}
+
+.opportunities-section.opportunities-section_planning .navigation-item-block{
+	display: none;
 }
 
 .opportunities-section .tabset {
@@ -2330,6 +2333,10 @@ header {
 
 .home-page .region-breadcrumb {
 	display: none;
+}
+
+body:not(.home) .region.region-breadcrumb + a + div {
+    margin-top: 100px;
 }
 
 .home-page .start-courage {
@@ -4331,10 +4338,6 @@ a.btn_icon img {
 	margin-bottom: 12px;
 }
 
-.book-section.main-book-courage{
-	margin-top: 110px;
-}
-
 @media (min-width: 1024px) {
 	.book {
 		margin-bottom: 115px;
@@ -5314,14 +5317,8 @@ a.btn_icon img {
 
 .about-intro {
 	margin-bottom: 50px;
-	margin-top: 100px;
 }
 
-@media (min-width: 768px) {
-	.about-intro {
-		margin-bottom: 150px;
-	}
-}
 
 .about-intro h2.section_title {
 	text-align: left;

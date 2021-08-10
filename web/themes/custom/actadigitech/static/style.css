@@ -200,6 +200,25 @@ h2.small_heading {
 }
 
 
+form.webform-submission-contact-form input, form.webform-submission-contact-form textarea {
+    max-width: 450px;
+    border-radius: 4px;
+    border: 1px solid #AEBBC7;
+    margin-bottom: 25px;
+    padding-left: 15px;
+}
+
+form.webform-submission-contact-form input{
+	height: 58px;
+}
+
+form.webform-submission-contact-form .btn-primary{
+	background-color: #0094d9;
+	color: #fff;
+	font-size: 16px;
+	padding: 16px 34px 14px;
+}
+
 /* -- Widths for core design */
 
 /* (Note: if changing these, also change 'Other elements
@@ -208,7 +227,7 @@ h2.small_heading {
 /* --- Content width (full) */
 
 .section-blog.blog-insites{
-	padding: 100px 0;
+	padding: 0 0  100px;
 }
 .section-blog.blog-insites .section_title{
 	margin-bottom: 30px;
@@ -324,7 +343,6 @@ h2.small_heading {
 
 	margin-left: auto;
 	margin-right: auto;
-	position: relative;
 }
 
 @media screen and
@@ -399,6 +417,15 @@ header {
 header.beige {
 	background-image: -webkit-linear-gradient(190deg, #fafae8 0%, #f1f0cd 100%);
 	background-image: linear-gradient(260deg, #fafae8 0%, #f1f0cd 100%);
+}
+
+header.beige .page_title_and_image .s_image{
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+header.beige .page_title_and_image .s_image img{
+	max-width: 100%
 }
 
 header.grey {
