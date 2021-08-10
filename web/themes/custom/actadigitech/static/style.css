@@ -324,6 +324,7 @@ h2.small_heading {
 
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 @media screen and

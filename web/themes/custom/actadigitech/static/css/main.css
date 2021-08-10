@@ -1347,6 +1347,7 @@ header .s_image {
 	width: 80vw;
 }
 
+
 @media (min-width: 768px) {
 	header .s_image, body.center-page header .s_image {
 		width: auto;
@@ -1355,6 +1356,12 @@ header .s_image {
 		-ms-transform: translateX(100%);
 		transform: translateX(100%);
 		bottom: -33px;
+	}
+
+	body.about-page header .s_image{
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
 	}
 }
 
@@ -1617,7 +1624,7 @@ h3 {
 	/* text-align: center; */
 }
 
-.articles-page .opportunities-section .main-courage__block .start-courage{
+body.home.articles-page .opportunities-section .main-courage__block .start-courage{
 	margin-top: 100px;
 }
 
@@ -1752,6 +1759,21 @@ h3 {
 	display: none;
 }
 
+.articles-page .start-courage-section.start-courage-new-section{
+	position: relative;
+}
+.articles-page .start-courage-section.start-courage-new-section .start-courage__image-block img:nth-of-type(1){
+	left: 296px;
+	top: 9px;
+	position: relative;
+}
+.articles-page .start-courage-section.start-courage-new-section .start-courage__image-block img:nth-of-type(2){
+	position: relative;
+	mix-blend-mode: multiply;
+	left: -53px;
+	top: 1px;
+}
+
 @media (min-width: 768px) {
 	.articles-page .start-courage .start-courage__image-block {
 		font-size: 24px;
@@ -1771,6 +1793,14 @@ h3 {
 		-ms-transform: translateY(-100%);
 		transform: translateY(-100%);
 	}
+	.articles-page .start-courage-section.start-courage-new-section .start-courage .start-courage__image-block {
+		position: absolute;
+		top: -240px;
+		right: -263px;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
 }
 
 @media (min-width: 1300px) {
@@ -1780,6 +1810,14 @@ h3 {
 		-webkit-transform: translateY(-100%);
 		-ms-transform: translateY(-100%);
 		transform: translateY(-100%);
+	}
+	.articles-page .start-courage-section.start-courage-new-section .start-courage .start-courage__image-block {
+		position: absolute;
+		top: -240px;
+		right: -263px;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
 	}
 	.home.articles-page .start-courage .start-courage__image-block{
 		top: auto;
@@ -1824,6 +1862,7 @@ h3 {
 
 .article-intro {
 	padding-bottom: 130px;
+	margin-top: 100px;
 }
 
 .article-intro h2 {
@@ -2264,6 +2303,7 @@ header {
 	background: rgba(250, 250, 232, 0.5) no-repeat 50% 50%/cover;
 	background-image: url("../images/pages/start-journey/gradient-bg.png");
 	padding: 60px 0;
+	position: relative;
 }
 
 @media (min-width: 1024px) {
