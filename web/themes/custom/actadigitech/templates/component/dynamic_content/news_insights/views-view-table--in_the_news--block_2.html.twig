@@ -19,21 +19,21 @@
  */
 #}
 
-<section class="section-blog">
+<section class="section-blog blog-insites">
     <div class="content_width_plus_padding">
         <h2 class="flush_with_top_of_letters section_title">Insights from Jim</h2>
         <div class="ajax-filters-container">
             <div class="ajax-filter-holder">
                 <div class="load-more-box">
                     <div class="df-row ajax-load-content">
-                        <div class="card_ct col-sm-6 col-lg-4">
                             {% for key,row in rows  %}
+                            <div class="col-xs-12 col-sm-6 col-md-4">
                                 <article class="card">
                                     <div class="card-header">
                                         <time>{{ row.columns.field_date.content }}</time>
-                                        <p>
+                                        <h4>
                                             {{ row.columns.title.content }}
-                                        </p>
+                                        </h4>
                                     </div>
                                     <div class="content">
                                         <a target="_blank" href="{{ field_news_link }}" class="card-img">
@@ -41,8 +41,8 @@
                                         </a>   
                                     </div>
                                 </article>
+                            </div>
                             {% endfor %}
-                        </div>
                     </div>
                 </div>
             </div>

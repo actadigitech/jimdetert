@@ -164,7 +164,6 @@ p:last-of-type{
     margin-left: 16.666667%;
 }
 
-
 /**************************************************Header Css Start*********************************************/
 .header_brands {
     float: left;
@@ -649,7 +648,7 @@ ul.follow_jim li a:hover{
 footer.footer {
     float: left;
     width: 100%;
-    padding: 80px 0 0;
+    padding: 104px 0 0;
     background: #0a3b56;
     color: #fff;
     margin-top: 0;
@@ -657,7 +656,7 @@ footer.footer {
 footer.footer p{
   color: #fff;
 }
-footer.footer  .footer_logo a{
+footer.footer .footer_logo a{
     color: #fff;
 }
 footer.footer h3 {
@@ -673,7 +672,7 @@ footer.footer h3 {
     letter-spacing: 0;
 }
 footer.footer a {
-    color: #aebbc7;
+    color: #fff;
     margin-bottom: 10px;
     display: block;
     font-weight: bold;
@@ -719,6 +718,12 @@ footer.footer p.address, footer.footer p.phone, footer.footer p.phone {
     padding-left: 22px;
     position: relative;
 }
+footer.footer .foot .main_menu li{
+    font-size: 17px;
+}
+footer.footer .foot .main_menu li a{
+    margin-bottom: 18px;
+}
 .copyright {
     margin-top: 80px;
     text-align: left;
@@ -727,6 +732,9 @@ footer.footer p.address, footer.footer p.phone, footer.footer p.phone {
 footer .copyright p{
   margin: 0;
     color: #61798e;
+}
+footer.footer .small_print{
+    margin-top: 50px;
 }
 .copyright_inner {
     border-top: 1px solid #61798e;
