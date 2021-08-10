@@ -71,6 +71,9 @@
 {% block main %}
 <div class="js-quickedit-main-content">
   <main role="main">
+      <div class="region region-breadcrumb">
+       {{ page.breadcrumb }}
+      </div>
       {# Content #}
       {% block content %}
        <a id="main-content"></a>
