@@ -1614,7 +1614,11 @@ h3 {
 }
 
 .articles-page .opportunities-section h2 {
-	text-align: center;
+	/* text-align: center; */
+}
+
+.articles-page .opportunities-section .main-courage__block .start-courage{
+	margin-top: 100px;
 }
 
 .articles-page .navigation-item-block {
