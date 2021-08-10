@@ -23,6 +23,7 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/easy_breadcrumb": "^2.0",
         "drupal/eck": "^1.0@beta",
         "drupal/google_analytics": "^3.1",
         "drupal/imce": "^2.4",

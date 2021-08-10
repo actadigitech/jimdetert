@@ -1,0 +1,58 @@
+{% set title = eck_entity.title.value %}
+{% set cards = eck_entity.field_single_praises_ %}
+{% set variation = eck_entity.field_variation.value %}
+
+{% if variation == "variation_1" %}
+  {% set classes = [
+  'advance-section',
+  ] %}
+
+
+  <section{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <div class="content_width_plus_padding">
+      <div class="content_width s_inner">
+        <div class="advance-section__block">
+          <div class="advance-section__text">{{ title }}</div>
+          <div class="advance-section__cards-block">
+            {% for key,subentity in cards if key|first != '#' %}
+              <div class="review-card">
+               {{ subentity.entity.field_bio.getValue().0.value|raw }}
+                <div class="review-card__author">{{ subentity.entity.field_author.value }}</div>
+                  <div class="review-card__author-details">
+                     {{ subentity.entity.field_author_details.getValue().0.value|raw }}
+                  </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% else %}
+
+<section>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="content_width_plus_padding">
+    <div class="content_width s_inner">
+      <div class="book-cards">
+        <h3 class="top-line">{{ title }}</h3>
+        <div class="book-cards__block">
+          {% for key,subentity in cards if key|first != '#' %}
+            <div class="review-card">
+             {{ subentity.entity.field_bio.getValue().0.value|raw }}
+              <div class="review-card__author">{{ subentity.entity.field_author.value }}</div>
+                <div class="review-card__author-details">
+                   {{ subentity.entity.field_author_details.getValue().0.value|raw }}
+                </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endif %}
