@@ -282,7 +282,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'd7A8OfVJiQOA6yt0NZAXagpphtY-_ZJeU40QOTCQuBErbJGJwIc3m-jNB9Jtd9qQ_2f3J59Hng';
+$settings['hash_salt'] = 'zbDz-5McZbSO-polEzNEXFUZ2UmImEAtLr7txG_wHBz6KShzbKWtd3nLuQbmL74yuTr6TauPzQ';
 
 /**
  * Deployment identifier.
@@ -803,7 +803,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'jimdetert',
+  'database' => 'jim',
   'username' => 'root',
   'password' => '',
   'prefix' => '',
@@ -812,4 +812,4 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['config_sync_directory'] = 'sites/default/config/sync';
+$settings['config_sync_directory'] = 'sites/default/files/config_sujW2ync-2YgYDuq5DbDSxzHdUp983OQYXiFpCAHgXb-5XOzKTgGE9sRjex2QMNMYbGW30Ij4g/sync';

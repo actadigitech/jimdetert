@@ -376,18 +376,36 @@ header.grey.home {
 	background-image: url('images/in-chrome-sections/header/backgrounds/jpegs/bg-desktop-grey-home-gradient.jpg');
 }
 
-/* New menu classes */
-header .top {
-	
-}
+/**
+ * @file
+ * Styles for breadcrumbs.
+ */
 
-header .site_name {
-
-}
-
-#nav {
-
-}
+ .breadcrumb {
+	padding-bottom: 0.5em;
+  }
+  .breadcrumb ol {
+	margin: 0;
+	padding: 0;
+  }
+  [dir="rtl"] .breadcrumb ol {
+	/* This is required to win over specificity of [dir="rtl"] ol */
+	margin-right: 0;
+  }
+  .breadcrumb li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  }
+  /* IE8 does not support :not() and :last-child. */
+  .breadcrumb li:before {
+	content: " \BB ";
+  }
+  .breadcrumb li:first-child:before {
+	content: none;
+  }
+  
 
 /* Classes no longer there AFAIK */
 		.menu_top.desktop {
@@ -487,14 +505,14 @@ header .site_name {
 	}
 } */ 
 
-.page_title_and_image h1 {
+.page_title_and_image h1, .page_title_and_image h1 > p {
 	font-size: 58px;
 	font-weight: normal;
 	text-align: center;
 	letter-spacing: 0.04em;
-
 	margin: 0em;
-	padding-top: 80px;
+	padding-top: 0;
+	line-height: normal;
 	/* ↑ padding-bottom has no effect because of the larger
 		height set for the parent element */
 
@@ -565,9 +583,9 @@ header.grey .s_rule {
 
 /* ↓ Keep a diff font-size breakpoint, though can change from 685/var(--preview-temp) which I'm doing for my narrow window right sidebar inspect element */
 @media screen and ( max-width: 685px ) {
-	.page_title_and_image h1 {
+	.page_title_and_image h1, .page_title_and_image h1 > p {
 		font-size: 48px;
-		padding-top: 50px;
+		padding-top: 0;
 		/* ↑ padding-bottom has no effect because of the larger
 			height set for the parent element */
 	}
@@ -575,10 +593,10 @@ header.grey .s_rule {
 
 /* ↓ Keep this, as good limit for Rose's 40px mobile size ... looks best up to 375 */
 @media screen and ( max-width: 479px ) {
-	.page_title_and_image h1 {
+	.page_title_and_image h1, .page_title_and_image h1 > p {
 		font-size: 40px;
 		/* ↑ Rose's size, perfect for 320px, so good to KEEP for max375 */
-		padding-top: 50px;
+		padding-top: 0;
 		/* ↑ padding-bottom has no effect because of the larger
 			height set for the parent element */
 	}

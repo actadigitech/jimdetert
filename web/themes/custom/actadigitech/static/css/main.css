@@ -1344,42 +1344,43 @@ input[type='submit'] {
 	color: #2d638f;
 }
 
-.header_action-center {
+header {
 	overflow: hidden;
 }
 
-.header_action-center .s_image {
+header .s_image {
 	right: -29%;
 	bottom: -33px;
 	width: 80vw;
 }
 
 @media (min-width: 768px) {
-	.header_action-center .s_image {
+	header .s_image, body.center-page header .s_image {
 		width: auto;
 		right: 308px;
 		-webkit-transform: translateX(100%);
 		-ms-transform: translateX(100%);
 		transform: translateX(100%);
+		bottom: -33px;
 	}
 }
 
-.header_action-center .s_image img {
+header .s_image img {
 	width: 70vw;
 }
 
 @media (min-width: 768px) {
-	.header_action-center .s_image img {
+	header .s_image img {
 		width: 78%;
 	}
 }
 
-.header_action-center .menu_top {
+header .menu_top {
 	position: relative;
 	z-index: 2;
 }
 
-.header_action-center h1 {
+header h1 {
 	margin: 0 auto;
 }
 
@@ -1493,7 +1494,7 @@ h3 {
 	letter-spacing: 0.58px;
 }
 
-.book-page .header_action-center .s_image {
+.book-page header .s_image {
 	right: 218px;
 	bottom: 70px;
 }
@@ -1680,7 +1681,7 @@ h3 {
 	color: #0094d9;
 }
 
-.articles-page .header_action-center .s_image {
+.articles-page header .s_image {
 	right: 218px;
 	bottom: 70px;
 }
@@ -1782,6 +1783,14 @@ h3 {
 		-webkit-transform: translateY(-100%);
 		-ms-transform: translateY(-100%);
 		transform: translateY(-100%);
+	}
+	.home.articles-page .start-courage .start-courage__image-block{
+		top: auto;
+		right: auto;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+		bottom: 0;
 	}
 }
 
@@ -2105,11 +2114,26 @@ header {
 .opportunities-section h2 {
 	letter-spacing: 1.3px;
 	margin-bottom: 50px;
-	line-height: 42px;
+	line-height: 50px;
 }
 
 .opportunities-section p {
 	letter-spacing: .3px;
+}
+.opportunities-section p.introtext{
+	font-size: 22px;
+	line-height: 32px;
+	margin-bottom: 40px;
+}
+.opportunities-section p.heighlight{
+	font-weight: 700;
+	font-style: italic;
+	font-size: 22px;
+	line-height: 33px;
+}
+.opportunities-section p.introbody{
+	font-size: 24px;
+	line-height: 36px;
 }
 
 .opportunities-section_planning .standfirst {
@@ -2932,12 +2956,12 @@ a.btn_primary:hover {
 
 a.btn_secondary {
 	background-color: #fff;
-	color: #0a3b56;
+	color: #0a3b56 !important;
 }
 
 a.btn_secondary:hover {
 	background-color: #66bfe8;
-	color: #fff;
+	color: #fff !important;
 }
 
 a.btn_icon {
@@ -3138,16 +3162,15 @@ a.btn_icon img {
 
 .guide-block_assessments .guide-block__content .btn {
 	margin-bottom: 40px;
+	color: #0a3b56;
+}
+.guide-block_assessments .guide-block__content .btn:hover{
+	color: #fff;
 }
 
 .guide-block_assessments .guide-block__content p {
 	font-size: 18px;
-}
-
-@media (min-width: 768px) {
-	.guide-block_assessments .guide-block__content p {
-		font-size: 22px;
-	}
+	line-height: 27px;
 }
 
 .guide-block_assessments .guide-block__content h3 {
@@ -4242,6 +4265,10 @@ a.btn_icon img {
 	margin-bottom: 12px;
 }
 
+.book-section.main-book-courage{
+	margin-top: 110px;
+}
+
 @media (min-width: 1024px) {
 	.book {
 		margin-bottom: 115px;
@@ -5153,8 +5180,11 @@ a.btn_icon img {
 }
 
 .article__heading {
+	font-size: 22px;
+	line-height: 1.36364;
 	position: relative;
 	margin: 12px 20px 20px 0;
+	padding: 0 30px 0 0;
 }
 
 .article__heading i {
@@ -5171,7 +5201,7 @@ a.btn_icon img {
 .article__heading a {
 	padding-right: 30px;
 	font-size: 22px;
-	color: #000;
+	color: #000 !important;
 	display: block;
 }
 
