@@ -4864,6 +4864,7 @@ a.btn_icon img {
 
 .nav > li.item-expanded > a.long-link-text{
 	width: 205px;
+	display: inline-block;
 }
 
 .nav>li.item-expanded.open {
