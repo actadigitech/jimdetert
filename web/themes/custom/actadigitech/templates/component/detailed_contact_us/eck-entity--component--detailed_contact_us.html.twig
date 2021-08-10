@@ -12,6 +12,9 @@
 {% set linkedin_link = eck_entity.field_linkedin_link.0.url %}
 {% set linkedin_link_text = eck_entity.field_linkedin_link.0.title %}
 
+{% set facebook_link = eck_entity.field_facebook_link.0.url %}
+{% set facebook_link_text = eck_entity.field_facebook_link.0.title %}
+
 {% set pdf_link = eck_entity.field_pdf_link.0.url %}
 {% set pdf_link_text = eck_entity.field_pdf_link.0.title %}
 
@@ -68,6 +71,14 @@
                 </span>
                 <a target="_blank" class="s_text" href="{{ linkedin_link }}">
                   {{ linkedin_link_text }}
+                </a>
+              </div>
+              <div class="s_row">
+                <span class="s_image">
+                  <img src="/themes/custom/actadigitech/images/facebook.svg">
+                </span>
+                <a target="_blank" class="s_text" href="{{ facebook_link }}">
+                  {{ facebook_link_text }}
                 </a>
               </div>
             </div>
