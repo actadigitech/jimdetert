@@ -25,7 +25,7 @@
               </div>
             </div>
             {{ subentity.entity.field_description.getValue().0.value|raw }}
-            <a href=".{{ subentity.entity.field_link.0.url }}" class="btn btn_secondary">{{ subentity.entity.field_link.0.title }}</a>
+            <p><a href=".{{ subentity.entity.field_link.0.url }}" class="btn btn_secondary">{{ subentity.entity.field_link.0.title }}</a></p>
           </div>
         {% endfor %}
         </div>

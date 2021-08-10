@@ -803,11 +803,20 @@ section.inner_banner {
     justify-content: center;
 }
 ol.breadcrumb {
-    padding: 15px 0;
+    padding: 25px 0 15px;
     width: 100%;
     background: none;
     margin: 0;
     display: flex;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ol.breadcrumb > li + li::before{
+    display: none;
+}
+ol.breadcrumb > .active{
+    color: #000000;
 }
 ol.breadcrumb li a {
     font-size: 14px;
