@@ -1,33 +1,33 @@
 // begin: Custom JS
-if (jQuery(window).width() < 768) {
-  jQuery('.item-expanded__arrow').on('click', function(e) {
-    e.preventDefault();
-    jQuery(this).parent('.item-expanded').toggleClass('open');
-    jQuery('.nav-wrap').toggleClass('sub-menu-open');
-  });
+// if (jQuery(window).width() < 768) {
+//   jQuery('.item-expanded__arrow').on('click', function(e) {
+//     e.preventDefault();
+//     jQuery(this).parent('.item-expanded').toggleClass('open');
+//     jQuery('.nav-wrap').toggleClass('sub-menu-open');
+//   });
 
-  jQuery('.sub-nav').on('click', function(e) {
-    e.stopPropagation();
-  });
+//   jQuery('.sub-nav').on('click', function(e) {
+//     e.stopPropagation();
+//   });
 
-  jQuery('.btn-back').on('click', function(e) {
-    e.preventDefault();
-    jQuery('.item-expanded').removeClass('open');
-    jQuery('.nav-wrap').removeClass('sub-menu-open');
-  });
-}
+//   jQuery('.btn-back').on('click', function(e) {
+//     e.preventDefault();
+//     jQuery('.item-expanded').removeClass('open');
+//     jQuery('.nav-wrap').removeClass('sub-menu-open');
+//   });
+// }
 
-function resize() {
-  if (jQuery(window).width() > 767) {
-    jQuery('body').removeClass('nav-active');
-    jQuery('.item-expanded').removeClass('open');
-    jQuery('.nav-wrap').removeClass('sub-menu-open');
-  }
-}
+// function resize() {
+//   if (jQuery(window).width() > 767) {
+//     jQuery('body').removeClass('nav-active');
+//     jQuery('.item-expanded').removeClass('open');
+//     jQuery('.nav-wrap').removeClass('sub-menu-open');
+//   }
+// }
 
 jQuery(document).ready( function() {
-    jQuery(window).resize(resize);
-    resize();
+    //jQuery(window).resize(resize);
+    //resize();
 });
 
 // end: Custom JS
@@ -39,7 +39,21 @@ jQuery(function () {
   initAccordionToggle();
   initReadMoreShow();
   initTabNavigation();
+  navOpener();
 });
+
+function navOpener() {
+  jQuery(".btn-open.nav-opener").click(function(){
+    jQuery("body").addClass("nav-active");
+  });
+  jQuery(".btn-close.nav-opener").click(function(){
+    jQuery("body").removeClass("nav-active");
+  });
+  jQuery(".item-expanded__arrow").click(function(){
+    jQuery(this).toggleClass("active");
+    jQuery(this).prev().slideToggle();
+  });
+}
 
 function initPagination() {
   jQuery('.article').paginate({

@@ -25,7 +25,7 @@
           <div class="meet__text">{{ body|raw }}</div>
           <ul class="meet__social">
             {% for key,subentity in links if key|first != '#' %}
-              <li><a target="{{ subentity.options['attributes']['target'] }}" href="{{ subentity.url}}"><i class="{{ subentity.options['attributes']['class'] }}"></i></a></li>
+              <li><a target="_blank" href="{{ subentity.url}}"><i class="{{ subentity.options['attributes']['class'] }}"></i></a></li>
             {% endfor %}
           </ul>
           <a href="{{ link_url }}" class="btn btn_primary">{{ link_text }}</a>
