@@ -4970,9 +4970,12 @@ a.btn_icon img {
 	display: inline-block;
 }
 
-@media all and (max-width: 767.98px){
+@media (max-width: 767.98px){
 	.nav > li.item-expanded > a.long-link-text{
 		width: 100%;
+	}
+	.nav-wrap .nav > li > a:visited, .nav-wrap .nav > li > a{
+		padding: 15px 55px 15px 24px
 	}
 	.item-expanded__arrow > i {
 		transform: rotate(90deg);
@@ -5168,6 +5171,11 @@ a.btn_icon img {
 
 @media all and (max-width: 1024px) {
 	#block-socialshare{display: none}
+}
+
+@media (max-width: 768px) {
+	#block-socialshare{display: block}
+	.nav-wrap #block-socialshare .social_pages{padding: 20px 25px 15px 25px;}
 }
 
 @media (min-width: 768px) {
