@@ -207,6 +207,14 @@ form.webform-submission-contact-form input, form.webform-submission-contact-form
     margin-bottom: 25px;
     padding-left: 15px;
 }
+form.webform-submission-contact-form input::placeholder, form.webform-submission-contact-form textarea::placeholder{
+	opacity: 0.5;
+}
+
+form.webform-submission-contact-form #edit-markup{
+	font-size: 16px;
+	line-height: 24px;
+}
 
 form.webform-submission-contact-form input{
 	height: 58px;
@@ -217,6 +225,9 @@ form.webform-submission-contact-form .btn-primary{
 	color: #fff;
 	font-size: 16px;
 	padding: 16px 34px 14px;
+	border: 0;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 /* -- Widths for core design */
@@ -234,14 +245,18 @@ form.webform-submission-contact-form .btn-primary{
 }
 .section-blog.blog-insites .card-header time{
 	text-transform: uppercase;
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	line-height: 2.4rem;
 	margin-bottom: 15px;
 	display: block;
+	font-family: "Lato", "Avant Garde", "Century Gothic", sans-serif;
 }
 .section-blog.blog-insites .card-header h4 a{
 	color: #000;
 	line-height: 3.0rem;
+}
+.section-blog.blog-insites .card-header h4 a:hover{
+	color: #0094d9;
 }
 .section-blog.blog-insites .card-header h4{
 	margin-bottom: 40px;
@@ -419,11 +434,11 @@ header.beige {
 	background-image: linear-gradient(260deg, #fafae8 0%, #f1f0cd 100%);
 }
 
-header.beige .page_title_and_image .s_image{
+/* header.beige .page_title_and_image .s_image{
 	-webkit-transform: translateX(0);
 	-ms-transform: translateX(0);
 	transform: translateX(0);
-}
+} */
 header.beige .page_title_and_image .s_image img{
 	max-width: 100%
 }
@@ -438,8 +453,14 @@ header.grey {
 	background-repeat: no-repeat;
 }
 
-header.grey.home {
-	background-image: url('images/in-chrome-sections/header/backgrounds/jpegs/bg-desktop-grey-home-gradient.jpg');
+@media (max-width: 1024px) {
+	body.home header.grey{
+		background-image: none !important;
+		background-color: #293c4a !important;
+	}
+	body.home header.grey {
+		background-image: url('images/in-chrome-sections/header/backgrounds/jpegs/bg-desktop-grey-home-gradient.jpg') !important;
+	}
 }
 
 /**
@@ -1019,6 +1040,12 @@ footer .s_rule {
 	        flex-direction: row-reverse;
 }
 
+@media (max-width: 1024px) {
+	#about_page .sidebar_and_content{
+		flex-direction:  column-reverse;
+	}
+}
+
 #about_page aside.sidebar {
 	-ms-flex-preferred-size: 362px;
 	    flex-basis: 362px;
@@ -1219,6 +1246,21 @@ h2.sidebar_title {
 #contact_page .page_title_and_image .s_image {
     bottom: 56px;
     right: -4px;
+}
+
+@media (max-width: 768px) {
+	#contact_page .page_title_and_image .s_image{
+		bottom: 37px;
+		right: -23px;
+		width: 32%;
+	}
+}
+@media (max-width: 768px) {
+	#contact_page .page_title_and_image .s_image{
+		bottom: 25px;
+		width: 35%;
+		max-width: 140px;
+	}
 }
 
 #contact_page #only_contact_section {

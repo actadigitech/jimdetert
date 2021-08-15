@@ -652,6 +652,7 @@ footer.footer {
     background: #0a3b56;
     color: #fff;
     margin-top: 0;
+    border-top: 0;
 }
 footer.footer p{
   color: #fff;
@@ -811,6 +812,16 @@ ol.breadcrumb {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
+}
+@media (max-width: 1170px) {
+    ol.breadcrumb{
+        padding: 25px 40px 15px;
+    }
+}
+@media (max-width: 991px) {
+    ol.breadcrumb{
+        padding: 25px 1.5em 15px;
+    }
 }
 ol.breadcrumb > li + li::before{
     display: none;
