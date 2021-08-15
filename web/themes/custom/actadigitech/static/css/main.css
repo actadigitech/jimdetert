@@ -3133,7 +3133,7 @@ a.btn_icon img {
 
 .wcai-start__block p {
 	margin-top: 0;
-	margin-bottom: 27px;
+	margin-bottom: 27px !important;
 	letter-spacing: .3px;
 }
 
@@ -3304,7 +3304,7 @@ a.btn_icon img {
 }
 
 .guide-block__content p {
-	margin: 0 0 37px;
+	margin: 0 0 37px !important;
 	letter-spacing: .3px;
 }
 
