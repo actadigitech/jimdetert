@@ -1772,7 +1772,7 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 	.articles-page .start-courage {
 		position: static;
 	}
-	body.courage-page .articles-page .start-courage {
+	body.courage-page.articles-page .start-courage {
 		position: relative;
 	}
 }
