@@ -1828,9 +1828,12 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 	.home.articles-page .start-courage .start-courage__image-block{
 		top: 225px;
 		right: 35px;
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
-		transform: translateY(0);
+		-webkit-transform: translateY(100px);
+		-ms-transform: translateY(100px);
+		transform: translateY(100px);
+	}
+	.home.articles-page .content_width_plus_padding{
+		position: relative;
 	}
 }
 
@@ -1853,9 +1856,9 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 	.home.articles-page .start-courage .start-courage__image-block{
 		top: 225px;
 		right: 35px;
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
-		transform: translateY(0);
+		-webkit-transform: translateY(100px);
+		-ms-transform: translateY(100px);
+		transform: translateY(100px);
 	}
 }
 
