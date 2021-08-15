@@ -38,7 +38,7 @@
   <div class="content_width_plus_padding">
     <div class="content_width s_inner">
       <div class="book-cards">
-        <h3 class="top-line">{{ title }}</h3>
+        <h3 class="top-line">{{ title|raw }}</h3>
         <div class="book-cards__block">
           {% for key,subentity in cards if key|first != '#' %}
             <div class="review-card">
