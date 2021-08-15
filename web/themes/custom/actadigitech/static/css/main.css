@@ -3667,7 +3667,7 @@ a.btn_icon img {
 	font-size: 21px;
 	line-height: 30px;
 	text-transform: uppercase;
-	margin-bottom: 36px;
+	margin-bottom: 36px !important;
 	letter-spacing: .9px;
 }
 
