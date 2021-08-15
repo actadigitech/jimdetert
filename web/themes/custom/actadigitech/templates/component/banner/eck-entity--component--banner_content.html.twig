@@ -5,6 +5,9 @@
 {% set image_url = eck_entity.field_background_image.entity.uri.value %}
 {% set image_alt = eck_entity.field_background_image.entity.uri.value %}
 
+{% set mimage_url = eck_entity.field_mobile_image.entity.uri.value %}
+{% set mimage_alt = eck_entity.field_mobile_image.entity.uri.value %}
+
 {% set download_link_url = eck_entity.field_download_link.0.url %}
 {% set download_link_text = eck_entity.field_download_link.0.title %}
 
@@ -32,7 +35,7 @@
       </span>
     </div>
     <div class="intro__image-block">
-      <img src="./static/images/pages/home/book.png" srcset="./static/images/pages/home/book.png 1x, ./static/images/pages/home/book@2x.png 2x" alt="Jim Detert's book, 'Choosing Courage: The Everyday Guide to Being Brave at Work'">
+      <img src="{{ file_url(mimage_url) }}" srcset="./static/images/pages/home/book.png 1x, ./static/images/pages/home/book@2x.png 2x" alt="Jim Detert's book, 'Choosing Courage: The Everyday Guide to Being Brave at Work'">
     </div>
   </div>
   <div class="intro__bottom">
