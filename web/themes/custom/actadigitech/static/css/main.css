@@ -4090,6 +4090,7 @@ a.btn_icon img {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: row;
 		flex-direction: row;
+		width: 100%;
 	}
 }
 
