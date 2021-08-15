@@ -1772,6 +1772,9 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 	.articles-page .start-courage {
 		position: static;
 	}
+	body.courage_page .articles-page .start-courage {
+		position: relative;
+	}
 }
 
 .articles-page .start-courage__text {
