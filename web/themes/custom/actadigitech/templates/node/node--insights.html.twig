@@ -79,13 +79,15 @@
 <article{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {{ title_suffix }}
-  <div class="blog__wrapper">
+  <div class="blog__wrapper content_width_plus_padding">
     <div class="blog__wrapper_left">
       <div class="sub-title">
         {{ content.field_sub_title }}
       </div>
       <div class="main-title">
-        {{ lable }}
+        <h2>{{ lable }}
+        Add title here
+        </h2>
       </div>
       <div class="blog-date">
         {{ content.field_date }}
@@ -94,7 +96,7 @@
         {{ content.field_news_image }}
       </div>
       <div class="social-share">
-        {{ content.social_sharing }}
+        <span>SHARE</span>{{ content.social_sharing }}
       </div>
       <div class="blog-body">
         {{ content.field_main_body }}
@@ -104,25 +106,20 @@
       </div>
     </div>
     <div class="blog__wrapper_right">
-      <div class="blog-authpr">
+      <div class="blog-author">
         <p>Written By</p>
+        <h3>Add title here</h3>
         {{ content.field_written_by }}
       </div>
       <div class="social-buttons">
         <div class="s_row">
-          <span class="s_image">
-            <div>
-            <img src="/themes/custom/actadigitech/images/linkedin.svg">
-            </div>
-          </span>
+          <span class="icon-linkedin"></span>
           <a target="_blank" class="s_text" href="https://www.linkedin.com/in/jim-detert-785464b7/">
             Follow Jim On Linkedin
           </a>
         </div>
         <div class="s_row">
-          <span class="s_image">
-            <img src="/themes/custom/actadigitech/images/mail.svg">
-          </span>
+          <span class="icon-facebook"></span>
           <a target="_blank" class="s_text" href="https://facebook.com">
             Follow Jim On Facebook
           </a>

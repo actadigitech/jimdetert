@@ -28,6 +28,8 @@
 jQuery(document).ready( function() {
     //jQuery(window).resize(resize);
     //resize();
+
+    jQuery("header #block-socialshare").appendTo("ul.menu.menu--main.nav");
 });
 
 // end: Custom JS
