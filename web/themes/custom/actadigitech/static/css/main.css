@@ -1632,6 +1632,9 @@ h3 {
 .articles-page .opportunities-section h2 {
 	text-align: center;
 }
+.home.articles-page .opportunities-section h2{
+	text-align: left;
+}
 
 body.home.articles-page .opportunities-section .main-courage__block .start-courage{
 	margin-top: 100px;
@@ -2325,8 +2328,24 @@ header {
 	}
 }
 
+@media (max-width: 768px) {
+	.opportunities-section_planning .main-text .df-row .col-md-6{
+		padding: 0;
+	}
+	.navigation-item-block .col:nth-of-type(2){
+		width: 50% !important;
+		padding-left: 10px;
+	}
+	.navigation-item-block .col:nth-of-type(1){
+		width: 50% !important;
+		padding-right: 10px;
+	}
+}
+
 .opportunities-section_planning .main-text .top-line {
 	padding-top: 18px;
+	font-size: 2.2rem;
+	line-height: 3.2rem;
 }
 
 .opportunities-section_planning .df-row .opp-col{
@@ -2516,6 +2535,7 @@ body:not(.home) .region.region-breadcrumb + a + div {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: row;
 		flex-direction: row;
+		padding-left: 40px;
 	}
 }
 
@@ -3882,6 +3902,7 @@ a.btn_icon img {
 @media (max-width: 767px) {
 	.intro__quote {
 		font-size: 42px;
+		line-height: 50px;
 	}
 }
 
@@ -4495,8 +4516,14 @@ a.btn_icon img {
 	line-height: 18px;
 	letter-spacing: 1.04px;
 	color: #0a3b56;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	margin-top: 15px;
+}
+.book__quote-author__details.book__quote-author{
+	text-transform: capitalize;
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 10px;
 }
 
 .book__quote-block {
@@ -5452,6 +5479,9 @@ a.btn_icon img {
 	color: #000 !important;
 	display: block;
 }
+.article__heading a:hover{
+	color: #0094d9 !important;
+}
 
 @media (min-width: 768px) {
 	.article__heading a {
@@ -5566,6 +5596,9 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 	line-height: 24px;
 	color: var(--cc-blue);
 }
+.about-intro .links_w_small_images .s_text:hover{
+	color: #66bfe8;
+}
 
 @media (max-width: 1024px) {
 	.about-intro .grey_box {
@@ -5650,6 +5683,7 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 	#about_page .gutter_for_sidebar {
 		-ms-flex-preferred-size: 60px;
 		flex-basis: 60px;
+		display: none
 	}
 }
 

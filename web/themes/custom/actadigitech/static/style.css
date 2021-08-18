@@ -494,6 +494,16 @@ header.beige .page_title_and_image .s_image img{
 	max-width: 100%
 }
 
+@media (max-width: 768px) {
+	.courage header.beige .page_title_and_image .s_image img{
+		max-width: 50vw;
+	}
+	.courage.articles-page header .s_image{
+		right: -70px;
+		bottom: 0;
+	}
+}
+
 header.grey {
 	color: white;
 
