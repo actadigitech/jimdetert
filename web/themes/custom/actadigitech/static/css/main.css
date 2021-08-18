@@ -1812,6 +1812,10 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 	}
 }
 
+.articles-page .start-courage-section.start-courage-new-section .start-courage .start-courage__image-block{
+	mix-blend-mode: multiply;
+}
+
 @media (min-width: 1024px) {
 	.articles-page .start-courage .start-courage__image-block {
 		top: 100%;
@@ -1827,6 +1831,7 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 		-webkit-transform: translateY(0);
 		-ms-transform: translateY(0);
 		transform: translateY(0);
+		mix-blend-mode: multiply;
 	}
 	.home.articles-page .start-courage .start-courage__image-block{
 		top: 225px;
@@ -1855,6 +1860,7 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 		-webkit-transform: translateY(0);
 		-ms-transform: translateY(0);
 		transform: translateY(0);
+		mix-blend-mode: multiply;
 	}
 	.home.articles-page .start-courage .start-courage__image-block{
 		top: 225px;
@@ -2321,6 +2327,12 @@ header {
 
 .opportunities-section_planning .main-text .top-line {
 	padding-top: 18px;
+}
+
+.opportunities-section_planning .df-row .opp-col{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .opportunities-section_planning h2 {
@@ -4157,7 +4169,7 @@ a.btn_icon img {
 	justify-content: space-between;
 	margin-bottom: 0;
   	height: 100%;
-	border-bottom: 3px solid #D4DBD4;
+	border-bottom: 1pt solid #AEBBC7;
 }
 .review-card:not(:first-child) {
 	padding-top: 36px;
@@ -4385,11 +4397,11 @@ a.btn_icon img {
 		font-size: 26px;
 	} */
 	.main-courage__text p.standfirst{
-		font-size: 22px;
+		font-size: 18pt;
 		line-height: 32px;
 	}
 	.main-courage__text p{
-		font-size: 24px;
+		font-size: 18pt;
 		line-height: 36px;
 	}
 }
@@ -5662,8 +5674,8 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 	}
 
 	.main-courage__bold-italic{
-		font-size: 22px;
-		line-height: 33px;
+		font-size: 18pt;
+		line-height: 36px;
 	}
 }
 
@@ -6044,10 +6056,31 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
     display: inline-block;
     width: 30px;
 	text-align: center;
+	margin-right: 15px;
 }
 .blog__wrapper .blog__wrapper_right .social-buttons a {
     font-size: 14px;
     color: #0094D9;
+}
+.blog__wrapper .blog__wrapper_right .recent-post h3{
+	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.blog__wrapper .blog__wrapper_right .recent-post .field-content a{
+	margin-bottom: 20px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.blog__wrapper .blog__wrapper_right .recent-post .view-recent-news .views-row{
+	margin-bottom: 30px;
+	border-bottom: 1px solid #9fa6ac;
+	padding-bottom: 30px;
+}
+.blog__wrapper .blog__wrapper_right .recent-post .view-recent-news .views-row:last-child{
+	border-bottom: 0;
 }
 .blog__wrapper .sub-title .field{
 	font-size: 17px;
@@ -6072,15 +6105,15 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 	padding: 20px 0;
 }
 .blog__wrapper .social-share > span{
-	margin-right: 20px;
+	margin-right: 30px;
 }
 .blog__wrapper .social-share ul{
 	display: flex;
 }
 .blog__wrapper .social-share ul > li{
-	margin-right: 15px;
+	margin-right: 20px;
 }
-.blog__wrapper .social-share #share-service-facebook .share-service-name, .blog__wrapper .social-share #share-service-twitter .share-service-name{
+.blog__wrapper .social-share .share-service-name{
 	font-size: 0;
 }
 .blog__wrapper .social-share #share-service-facebook .share-service-name::before{
@@ -6097,6 +6130,28 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 .blog__wrapper .social-share #share-service-twitter .share-service-name::before{
 	content: "\e903";
 	color: #6187d3;
+	font-family: 'icomoon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 33px;
+	font-size: 20px;
+}
+.blog__wrapper .social-share #share-service-linkedin .share-service-name::before{
+	content: "\e909";
+	color: #2d638f;
+	font-family: 'icomoon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 33px;
+	font-size: 20px;
+}
+.blog__wrapper .social-share #share-service-email .share-service-name::before{
+	content: "\e905";
+	color: #0095d9;
 	font-family: 'icomoon' !important;
 	font-style: normal;
 	font-weight: normal;
