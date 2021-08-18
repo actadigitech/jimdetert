@@ -813,6 +813,11 @@ ol.breadcrumb {
     margin-left: auto;
     margin-right: auto;
 }
+@media (max-width: 768px) {
+    ol.breadcrumb {
+        display: inline-block;
+    }
+}
 @media (max-width: 1170px) {
     ol.breadcrumb{
         padding: 25px 40px 15px;

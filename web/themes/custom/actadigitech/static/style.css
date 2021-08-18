@@ -212,8 +212,9 @@ form.webform-submission-contact-form input::placeholder, form.webform-submission
 }
 
 form.webform-submission-contact-form #edit-markup{
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 24px;
+	color: #0a3b56;
 }
 
 form.webform-submission-contact-form input{
@@ -245,10 +246,11 @@ form.webform-submission-contact-form .btn-primary{
 }
 .section-blog.blog-insites .card-header time{
 	text-transform: uppercase;
-	font-size: 1.3rem;
+	font-size: 13pt;
 	line-height: 2.4rem;
 	margin-bottom: 15px;
 	display: block;
+	color: #0a3b56;
 	font-family: "Lato", "Avant Garde", "Century Gothic", sans-serif;
 }
 .section-blog.blog-insites .card-header h4 a{
@@ -260,6 +262,54 @@ form.webform-submission-contact-form .btn-primary{
 }
 .section-blog.blog-insites .card-header h4{
 	margin-bottom: 40px;
+}
+
+.section-blog.blog-insites .card .content .card-image{
+	min-height: 240px;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
+.section-blog.blog-insites .card .content .card-image img{
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	object-fit: cover;
+}
+
+.section-blog.blog-insites .load-more-box .df-row{
+	/* border-bottom: 1pt solid #AEBBC7; */
+	padding: 50px 0;
+	position: relative;
+}
+.section-blog.blog-insites .load-more-box .df-row::after{
+	content: '';
+	height: 1pt;
+	width: calc(100% - 40px);
+	background: #AEBBC7;
+	bottom: 0;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.section-blog.blog-insites .load-more-box .df-row:last-child:after{
+	display: none
+}
+
+@media (max-width: 1024px){
+	.section-blog.blog-insites .load-more-box .df-row::after{
+		display: none;
+	}
+}
+
+.section-blog.blog-insites .card .card-header{
+	min-height: 115px;
 }
 @media (max-width: 768px) {
 	.section-blog.blog-insites .df-row .col-xs-12 {
@@ -279,6 +329,7 @@ form.webform-submission-contact-form .btn-primary{
 	padding-right: 40px;
 	margin-left: auto;
 	margin-right: auto;
+	min-height: 230px;
 }
 
 .content_width {
@@ -441,6 +492,16 @@ header.beige {
 } */
 header.beige .page_title_and_image .s_image img{
 	max-width: 100%
+}
+
+@media (max-width: 768px) {
+	.courage header.beige .page_title_and_image .s_image img{
+		max-width: 50vw;
+	}
+	.courage.articles-page header .s_image{
+		right: -70px;
+		bottom: 0;
+	}
 }
 
 header.grey {
