@@ -77,8 +77,6 @@
 %}
 
 <article{{ attributes.addClass(classes) }}>
-  
-  {{ content.field_banner }}
   {{ title_prefix }}
   {{ title_suffix }}
   <div class="blog__wrapper content_width_plus_padding">
@@ -125,7 +123,7 @@
         </div>
       </div>
       <div class="recent-post">
-        <h3>OTHER RECENT POSTS</h3>
+        OTHER RECENT POSTS
         {{ drupal_view('recent_news', 'block_1') }}
       </div>
     </div>
