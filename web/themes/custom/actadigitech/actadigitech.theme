@@ -15,7 +15,7 @@ use Drupal\node\NodeInterface;
 function actadigitech_preprocess_page(&$variables) {
   $node = \Drupal::routeMatch()->getParameter('node');
   if ($node instanceof NodeInterface) {
-    if ($node->bundle() == 'layout_page') {
+    if ($node->bundle() == 'layout_page' || $node->bundle() == 'insights') {
       // You can get nid and anything else you need from the node object.
       $banner_eck = $node->get('field_banner')->referencedEntities();
       if (!empty($banner_eck) && isset($banner_eck)) {
