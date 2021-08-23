@@ -1815,10 +1815,6 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 	}
 }
 
-.articles-page .start-courage-section.start-courage-new-section .start-courage .start-courage__image-block{
-	mix-blend-mode: multiply;
-}
-
 @media (min-width: 1024px) {
 	.articles-page .start-courage .start-courage__image-block {
 		top: 100%;
@@ -1831,10 +1827,9 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 		position: absolute;
 		top: -240px;
 		right: -263px;
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
-		transform: translateY(0);
-		mix-blend-mode: multiply;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
 	}
 	.home.articles-page .start-courage .start-courage__image-block{
 		top: 225px;
@@ -1860,10 +1855,9 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 		position: absolute;
 		top: -240px;
 		right: -263px;
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
-		transform: translateY(0);
-		mix-blend-mode: multiply;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
 	}
 	.home.articles-page .start-courage .start-courage__image-block{
 		top: 225px;
@@ -3698,6 +3692,10 @@ a.btn_icon img {
 	}
 }
 
+.navigation-item__icon{
+	width: 7px;
+}
+
 .navigation-item_prev .navigation-item__icon {
 	-webkit-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
@@ -4401,7 +4399,7 @@ a.btn_icon img {
 
 @media (min-width: 1024px) {
 	.main-courage__bold-italic {
-		font-size: 26px;
+		font-size: 18px;
 	}
 }
 
@@ -4422,12 +4420,12 @@ a.btn_icon img {
 	
 }
 .main-courage__text p.standfirst{
-	font-size: 18pt;
-	line-height: 32px;
+	font-size: 18px;
+	line-height: 27px;
 }
 .main-courage__text p{
-	font-size: 18pt;
-	line-height: 36px;
+	font-size: 18px;
+	line-height: 27px;
 }
 
 .main-courage__text p {
@@ -5706,8 +5704,8 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 }
 
 .main-courage__bold-italic{
-	font-size: 18pt;
-	line-height: 36px;
+	font-size: 18px;
+	line-height: 27px;
 }
 @media (min-width: 1024px) {
 	#about_page .main-courage .standfirst {
@@ -6101,6 +6099,13 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 }
 .blog__wrapper .blog__wrapper_right .recent-post{
 	margin-top: 50px;
+}
+.blog__wrapper .blog__wrapper_right .recent-post > p{
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 22px;
+	color: #0094D9;
+	margin-bottom: 20px;
 }
 .blog__wrapper .blog__wrapper_right .recent-post h3{
 	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
