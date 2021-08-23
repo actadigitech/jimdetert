@@ -6100,6 +6100,13 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 .blog__wrapper .blog__wrapper_right .recent-post{
 	margin-top: 50px;
 }
+.blog__wrapper .blog__wrapper_right .recent-post .views-field-field-date > .field-content{
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #0A3B56;
+	margin-bottom: 15px;
+	line-height: 22px;
+}
 .blog__wrapper .blog__wrapper_right .recent-post > p{
 	text-transform: uppercase;
 	font-size: 16px;
