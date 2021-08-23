@@ -208,7 +208,8 @@ form.webform-submission-contact-form input, form.webform-submission-contact-form
     padding-left: 15px;
 }
 form.webform-submission-contact-form input::placeholder, form.webform-submission-contact-form textarea::placeholder{
-	opacity: 0.5;
+	/* opacity: 0.5; */
+	color: #AEBBC7;
 }
 
 form.webform-submission-contact-form #edit-markup{
@@ -246,7 +247,7 @@ form.webform-submission-contact-form .btn-primary{
 }
 .section-blog.blog-insites .card-header time{
 	text-transform: uppercase;
-	font-size: 13pt;
+	font-size: 13px;
 	line-height: 2.4rem;
 	margin-bottom: 15px;
 	display: block;
@@ -255,6 +256,7 @@ form.webform-submission-contact-form .btn-primary{
 }
 .section-blog.blog-insites .card-header h4 a{
 	color: #000;
+	font-size: 22px;
 	line-height: 3.0rem;
 }
 .section-blog.blog-insites .card-header h4 a:hover{
@@ -329,7 +331,6 @@ form.webform-submission-contact-form .btn-primary{
 	padding-right: 40px;
 	margin-left: auto;
 	margin-right: auto;
-	min-height: 230px;
 }
 
 .content_width {
@@ -478,6 +479,11 @@ form.webform-submission-contact-form .btn-primary{
 header {
 	padding-top: 50px;
 	/* ↑ Area above menu, safest to set on header itself */
+}
+@media (max-width: 768px) {
+	header {
+		overflow: hidden;
+	}
 }
 
 header.beige {
