@@ -2125,6 +2125,7 @@ header {
 	.opportunities-section .tabset li {
 		width: calc(25% - 5px);
 		margin-bottom: 0;
+		border-bottom: 3px solid transparent;
 	}
 }
 
@@ -2137,10 +2138,6 @@ header {
 	border-bottom: 3px solid #0094d9;
 	-webkit-transition: border-bottom 0s;
 	transition: border-bottom 0s;
-}
-
-.opportunities-section .tabset li.active a {
-	color: #0094d9;
 }
 
 .opportunities-section .tabset_articles li {
@@ -4764,7 +4761,7 @@ a.btn_icon img {
 
 .tabset li:hover {
 	background-color: rgba(174, 187, 199, 0.2);
-	border-bottom: 1px solid #61798e;
+	border-bottom: 3px solid #61798e;
 }
 
 .tabset li:hover a {
@@ -5434,6 +5431,11 @@ a.btn_icon img {
 	padding: 0;
 }
 
+.article__item .article__row .image_column {
+	display: flex;
+	align-items: center;
+}
+
 .article__item {
 	border-bottom: 1px solid #a4b2bf;
 	padding-bottom: 50px;
@@ -5642,9 +5644,17 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 }
 
 @media (max-width: 768px) {
+	#about_page .page_title_and_image .s_image{
+		right: -180px;
+	}
 	#about_page .page_title_and_image .s_image img {
 		height: auto !important;
 		width: 100%;
+	}
+}
+@media (max-width: 640px) {
+	#about_page .page_title_and_image .s_image{
+		right: -80px;
 	}
 }
 
