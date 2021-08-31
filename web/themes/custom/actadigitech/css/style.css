@@ -723,6 +723,12 @@ footer.footer .foot .main_menu li{
     font-size: 17px;
     max-width: 200px
 }
+@media (max-width: 991.98px){
+    footer.footer .foot .main_menu li{
+        width: 100%;
+        max-width:100%;
+    }
+}
 footer.footer .foot .main_menu li a{
     margin-bottom: 18px;
 }

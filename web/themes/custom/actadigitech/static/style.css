@@ -372,9 +372,9 @@ form.webform-submission-contact-form .btn-primary{
 .section_news{
 	padding: 100px 0;
 }
-.section_news .medium_width_plus_padding{
+/* .section_news .medium_width_plus_padding{
 	padding-left: 0;
-}
+} */
 
 @media screen and
 (max-width: 991px) and
