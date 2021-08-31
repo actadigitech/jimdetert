@@ -36,6 +36,21 @@ function actadigitech_preprocess_page(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess_html()
+ * @param $variables
+ */
+
+function project_bootstrap_preprocess_html(&$variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+
+  if(is_object($node)) {
+    if($node->bundle() == "insights") {
+      $variables['attributes']['class'][] = 'blog-item';
+    }
+  }
+}
+
+/**
  * Preprocess html function to manage the page variables.
  */
 function actadigitech_preprocess_html(&$variables) {
