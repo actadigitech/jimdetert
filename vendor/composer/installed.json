@@ -2181,6 +2181,87 @@
         }
     },
     {
+        "name": "drupal/easy_breadcrumb",
+        "version": "2.0.1",
+        "version_normalized": "2.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/easy_breadcrumb.git",
+            "reference": "2.0.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/easy_breadcrumb-2.0.1.zip",
+            "reference": "2.0.1",
+            "shasum": "e622831032125f228de4393c6193d61040db604f"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "2.0.1",
+                "datestamp": "1626517571",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Neslee Canil Pinto",
+                "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Greg Boggs",
+                "homepage": "https://www.drupal.org/u/greg-boggs",
+                "role": "Maintainer"
+            },
+            {
+                "name": "RenatoG",
+                "homepage": "https://www.drupal.org/user/3326031"
+            },
+            {
+                "name": "diamondsea",
+                "homepage": "https://www.drupal.org/user/430714"
+            },
+            {
+                "name": "hmartens",
+                "homepage": "https://www.drupal.org/user/622826"
+            },
+            {
+                "name": "loopduplicate",
+                "homepage": "https://www.drupal.org/user/717290"
+            },
+            {
+                "name": "sonemonu",
+                "homepage": "https://www.drupal.org/user/1667988"
+            },
+            {
+                "name": "tatarbj",
+                "homepage": "https://www.drupal.org/user/649590"
+            },
+            {
+                "name": "volkswagenchick",
+                "homepage": "https://www.drupal.org/user/3332522"
+            }
+        ],
+        "description": "Adds configuration to the system breadcrumbs.",
+        "homepage": "https://www.drupal.org/project/easy_breadcrumb",
+        "support": {
+            "source": "https://git.drupalcode.org/project/easy_breadcrumb",
+            "issues": "https://www.drupal.org/project/issues/easy_breadcrumb"
+        }
+    },
+    {
         "name": "drupal/eck",
         "version": "1.0.0-beta2",
         "version_normalized": "1.0.0.0-beta2",
@@ -2341,6 +2422,52 @@
         }
     },
     {
+        "name": "drupal/google_tag",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/google_tag.git",
+            "reference": "8.x-1.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/google_tag-8.x-1.4.zip",
+            "reference": "8.x-1.4",
+            "shasum": "1bdc6f93d1c79c27738320597f2185f5de37432f"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.4",
+                "datestamp": "1593179846",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "solotandem",
+                "homepage": "https://www.drupal.org/user/240748"
+            }
+        ],
+        "description": "Allows your website analytics to be managed using Google Tag Manager.",
+        "homepage": "https://www.drupal.org/project/google_tag",
+        "support": {
+            "source": "https://git.drupalcode.org/project/google_tag"
+        }
+    },
+    {
         "name": "drupal/imce",
         "version": "2.4.0",
         "version_normalized": "2.4.0.0",
@@ -2479,6 +2606,60 @@
         }
     },
     {
+        "name": "drupal/menu_link_attributes",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/menu_link_attributes.git",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/menu_link_attributes-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "a332eca9d63eed14df01af759882627512ba6448"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.2",
+                "datestamp": "1616337149",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "jcnventura",
+                "homepage": "https://www.drupal.org/user/122464"
+            },
+            {
+                "name": "yannickoo",
+                "homepage": "https://www.drupal.org/user/531118"
+            }
+        ],
+        "description": "Allows you to add attributes to menu links.",
+        "homepage": "http://drupal.org/project/menu_link_attributes",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/menu_link_attributes",
+            "issues": "http://drupal.org/project/issues/menu_link_attributes"
+        }
+    },
+    {
         "name": "drupal/metatag",
         "version": "1.16.0",
         "version_normalized": "1.16.0.0",
@@ -2612,6 +2793,60 @@
             "source": "https://cgit.drupalcode.org/pathauto",
             "issues": "https://www.drupal.org/project/issues/pathauto",
             "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+        }
+    },
+    {
+        "name": "drupal/redirect",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/redirect.git",
+            "reference": "8.x-1.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.6.zip",
+            "reference": "8.x-1.6",
+            "shasum": "f848e001deac8425ae57d4b9397087c491d37294"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.6",
+                "datestamp": "1589312204",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            },
+            {
+                "name": "pifagor",
+                "homepage": "https://www.drupal.org/user/2375692"
+            }
+        ],
+        "description": "Allows users to redirect from old URLs to new URLs.",
+        "homepage": "https://www.drupal.org/project/redirect",
+        "support": {
+            "source": "https://git.drupalcode.org/project/redirect"
         }
     },
     {
@@ -3007,6 +3242,98 @@
             "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
             "docs": "https://www.drupal.org/docs/8/modules/webform",
             "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+        }
+    },
+    {
+        "name": "drupal/xmlsitemap",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/xmlsitemap.git",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/xmlsitemap-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "29395aa9eea8a58edefa3f9e0999d4d3a7f6b08f"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9",
+            "ext-xmlwriter": "*"
+        },
+        "require-dev": {
+            "drupal/metatag": "^1.0",
+            "drupal/robotstxt": "^1.0"
+        },
+        "suggest": {
+            "drush/drush": "Command-line regenerating and rebuilding sitemaps."
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1593451044",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9 || ^10"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            },
+            {
+                "name": "RenatoG",
+                "homepage": "https://www.drupal.org/user/3326031"
+            },
+            {
+                "name": "amateescu",
+                "homepage": "https://www.drupal.org/user/729614"
+            },
+            {
+                "name": "andrei.dincu",
+                "homepage": "https://www.drupal.org/user/2628879"
+            },
+            {
+                "name": "juampynr",
+                "homepage": "https://www.drupal.org/user/682736"
+            },
+            {
+                "name": "paulmckibben",
+                "homepage": "https://www.drupal.org/user/279003"
+            },
+            {
+                "name": "pifagor",
+                "homepage": "https://www.drupal.org/user/2375692"
+            },
+            {
+                "name": "tadityar",
+                "homepage": "https://www.drupal.org/user/3094465"
+            },
+            {
+                "name": "th_tushar",
+                "homepage": "https://www.drupal.org/user/1835276"
+            }
+        ],
+        "description": "Creates XML sitemaps for the site",
+        "homepage": "https://www.drupal.org/project/xmlsitemap",
+        "support": {
+            "source": "https://git.drupalcode.org/project/xmlsitemap",
+            "issues": "http://drupal.org/project/issues/xmlsitemap"
         }
     },
     {
@@ -6171,8 +6498,7 @@
             }
         ],
         "description": "Provides a list of PHP built-in functions that operate on resources",
-        "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
-        "abandoned": true
+        "homepage": "https://www.github.com/sebastianbergmann/resource-operations"
     },
     {
         "name": "sebastian/type",
