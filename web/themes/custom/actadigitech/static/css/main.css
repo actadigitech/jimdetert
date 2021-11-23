@@ -2125,7 +2125,7 @@ header {
 	.opportunities-section .tabset li {
 		width: calc(25% - 5px);
 		margin-bottom: 0;
-		border-bottom: 3px solid transparent;
+		border-bottom: 3px solid #a4b2bf;
 	}
 }
 
