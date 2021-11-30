@@ -2125,7 +2125,6 @@ header {
 	.opportunities-section .tabset li {
 		width: calc(25% - 5px);
 		margin-bottom: 0;
-		border-bottom: 3px solid #a4b2bf;
 	}
 }
 
@@ -6093,6 +6092,9 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 	line-height: 22px;
 	color: #0094D9;
 }
+.blog__wrapper .blog__wrapper_right .blog-author h2{
+	font-size: 24px
+}
 .blog__wrapper .blog__wrapper_right .blog-author > h3{
 	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
 	text-transform: capitalize;
@@ -6236,6 +6238,13 @@ nav.pager-nav.text-center .pagination .pager__item--next a > span{
 }
 .blog__wrapper .blog-body{
 	margin-top: 80px;
+}
+.blog__wrapper .blog-body p > strong, .blog__wrapper .blog-body h2 {
+    font-size: 20px;
+	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
+	font-weight: 600;
+	color: #0094D9;
+	display: inline-block;
 }
 .blog__wrapper .blog-tags{
 	margin-top: 50px;
