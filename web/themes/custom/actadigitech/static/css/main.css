@@ -4856,7 +4856,7 @@ a.btn_icon img {
 	.beige .top :not(.site_name) a {
 		color: #0a3b56;
 	}
-	body.blog-item ul.menu li a {
+	body.blog-item ul.menu:not(.menu--footer-menu) li a {
 		color: #0a3b56;
 	}
 	body.blog-item .site_name a{
