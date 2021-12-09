@@ -330,6 +330,28 @@ form.webform-submission-contact-form .btn-primary{
 	display: none
 }
 
+@media all and (max-width: 1024.98px){
+	.section-blog.blog-insites .load-more-box .df-row > .col-xs-12::before{
+		display: none
+	}
+	.section-blog.blog-insites .load-more-box .df-row > .col-xs-12 {
+		border-bottom: 1px solid #a4b2bf;
+	}
+	.section-blog.blog-insites .load-more-box .df-row > .col-xs-12:nth-child(2n+1) {
+		padding-left: 0;
+	}
+	.section-blog.blog-insites .load-more-box .df-row > .col-xs-12:not(:nth-child(2n+1)) {
+		padding-right: 0;
+	}
+}
+@media all and (max-width: 767.98px){
+	.section-blog.blog-insites .load-more-box .df-row > .col-xs-12{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		padding-bottom: 20px;
+	}
+}
+
 @media (max-width: 1024px){
 	.section-blog.blog-insites .load-more-box .df-row::after{
 		display: none;
@@ -508,7 +530,7 @@ header {
 }
 @media (max-width: 768px) {
 	header {
-		overflow: hidden;
+		/* overflow: hidden; */
 	}
 }
 

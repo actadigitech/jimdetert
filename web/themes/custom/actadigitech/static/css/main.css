@@ -1900,7 +1900,11 @@ body.home.articles-page .opportunities-section .main-courage__block .start-coura
 }
 
 .article-intro {
-	padding-bottom: 130px;
+	padding-bottom: 80px;
+}
+
+.article-intro .narrow_width p.text-align-center > strong{
+	font-weight: normal;
 }
 
 .article-intro h2 {
