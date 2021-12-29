@@ -529,8 +529,11 @@ header {
 	/* ↑ Area above menu, safest to set on header itself */
 }
 @media (max-width: 768px) {
-	header {
-		/* overflow: hidden; */
+	body header {
+		overflow: hidden;
+	}
+	body.nav-active header {
+		overflow: hidden;
 	}
 }
 
