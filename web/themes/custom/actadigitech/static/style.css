@@ -533,7 +533,7 @@ header {
 		overflow: hidden;
 	}
 	body.nav-active header {
-		overflow: hidden;
+		overflow: initial;
 	}
 }
 
